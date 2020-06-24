@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная</title>
-    <link rel="stylesheet" href="../public/css/normalize.css">
-    <link rel="stylesheet" href="../public/css/styles.min.css">
+    <link rel="stylesheet" href="public/css/normalize.css">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="public/css/styles.min.css">
 </head>
 <body>
 <h1>Test Header</h1>
@@ -68,8 +70,154 @@
   </div>
 </div>
 
-<div class="content-wrapper">
+<div class="content-wrapper container">
   <div class="command">
+    <h2 class="title"><span>Наша команда</span></h2>
+
+    <!--Carousel Wrapper-->
+    <div id="command-carousel" class="command-carousel carousel slide carousel-multi-item" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls controls-bottom">
+        <a class="btn-floating prev" href="#command-carousel" data-slide="prev">
+          <svg class="arrow-icon"><use xlink:href="public/images/icons/sprite.svg#ic-arrow"/></svg>
+        </a>
+        <a class="btn-floating" href="#command-carousel" data-slide="next">
+          <svg class="arrow-icon"><use xlink:href="public/images/icons/sprite.svg#ic-arrow"/></svg>
+        </a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="slider-item">
+                <div class="image-block">
+                  <div class="img-wrapper">
+                    <img src="public/images/content/command/1.jpg" alt="Наша команда">
+                  </div>
+                  <div class="hover-block">
+                    <ul class="social-list">
+                      <li class="social-item fb"><a href="https://www.facebook.com/" target="_blank"></a></li>
+                      <li class="social-item vk"><a href="https://vk.com/feed" target="_blank"></a></li>
+                      <li class="social-item insta"><a href="https://www.instagram.com/" target="_blank"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="name">Lorem ipsum 111</div>
+                  <div class="spec">директор</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="slider-item">
+                <div class="image-block">
+                  <div class="img-wrapper">
+                    <img src="public/images/content/command/2.jpg" alt="Наша команда">
+                  </div>
+                  <div class="hover-block">
+                    <ul class="social-list">
+                      <li class="social-item fb"><a href="https://www.facebook.com/" target="_blank"></a></li>
+                      <li class="social-item vk"><a href="https://vk.com/feed" target="_blank"></a></li>
+                      <li class="social-item insta"><a href="https://www.instagram.com/" target="_blank"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="name">Lorem ipsum 222</div>
+                  <div class="spec">директор</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="slider-item">
+                <div class="image-block">
+                  <div class="img-wrapper">
+                    <img src="public/images/content/command/3.jpg" alt="Наша команда">
+                  </div>
+                  <div class="hover-block">
+                    <ul class="social-list">
+                      <li class="social-item fb"><a href="https://www.facebook.com/" target="_blank"></a></li>
+                      <li class="social-item vk"><a href="https://vk.com/feed" target="_blank"></a></li>
+                      <li class="social-item insta"><a href="https://www.instagram.com/" target="_blank"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="name">Lorem ipsum 333</div>
+                  <div class="spec">директор</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="slider-item">
+                <div class="image-block">
+                  <div class="img-wrapper">
+                    <img src="public/images/content/command/1.jpg" alt="Наша команда">
+                  </div>
+                  <div class="hover-block">
+                    <ul class="social-list">
+                      <li class="social-item fb"><a href="https://www.facebook.com/" target="_blank"></a></li>
+                      <li class="social-item vk"><a href="https://vk.com/feed" target="_blank"></a></li>
+                      <li class="social-item insta"><a href="https://www.instagram.com/" target="_blank"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="name">Lorem ipsum 444</div>
+                  <div class="spec">директор</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="slider-item">
+                <div class="image-block">
+                  <div class="img-wrapper">
+                    <img src="public/images/content/command/1.jpg" alt="Наша команда">
+                  </div>
+                  <div class="hover-block">
+                    <ul class="social-list">
+                      <li class="social-item fb"><a href="https://www.facebook.com/" target="_blank"></a></li>
+                      <li class="social-item vk"><a href="https://vk.com/feed" target="_blank"></a></li>
+                      <li class="social-item insta"><a href="https://www.instagram.com/" target="_blank"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="name">Lorem ipsum 444</div>
+                  <div class="spec">директор</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!--/.Second slide-->
+
+      </div>
+      <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
   </div>
 </div>
 
@@ -98,6 +246,6 @@
   </footer>
 </div>
 
-<script src="../public/main.min.js"></script>
+<script src="public/main.min.js"></script>
 </body>
 </html>
