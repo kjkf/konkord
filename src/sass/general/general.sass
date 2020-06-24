@@ -57,9 +57,34 @@ h4
 		padding-left: 30px
 		padding-right: 30px
 
-.title
+h2 .title
 	color: $fontColorMain
-	//font-family: $font-Gilroy-ExtraBold
+	font-family: $font-Raleway-Semibold
+	font-size: $fontSize_h2
+	line-height: $lineHeight_h2
 
+.title-box
+	border: 1px solid $green
+	padding: 0 10px
+	position: relative
+	//margin-left: 200px
+	&::before
+		content: ''
+		width: 175px
+		height: 1px
+		position: absolute
+		border-bottom: 1px solid $green
+		top: 50%
+		left: -175px
+	&::after
+		content: ''
+		width: 175px
+		height: 1px
+		position: absolute
+		border-bottom: 1px solid $green
+		top: 50%
+		right: -175px
 
-
+.title-box__right
+	&::before
+		border: none
