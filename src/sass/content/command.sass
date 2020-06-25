@@ -1,0 +1,92 @@
+.command
+  padding: 90px 0
+  margin-bottom: 60px
+  .title
+    text-align: center
+    margin-bottom: 85px
+    span
+      display: inline-block
+      padding: 20px 25px
+      border: 1px solid $green
+      position: relative
+      &:before, &:after
+        content: ''
+        display: inline-block
+        position: absolute
+        width: 175px
+        height: 1px
+        background-color: $green
+        top: 50%
+      &:before
+        left: -175px
+      &:after
+        right: -175px
+  .carousel
+    .controls
+      width: 100%
+      position: absolute
+      bottom: -65px
+      text-align: center
+    .btn-floating
+      display: inline-block
+      width: 23px
+      height: 38px
+      &.prev .arrow-icon
+        transform: rotate(180deg)
+
+  .slider-item
+    max-width: 300px
+    min-width: 300px
+    text-align: center
+    font-size: 18px
+    line-height: 1.1
+    .image-block
+      position: relative
+      margin-bottom: 25px
+      img
+        width: 100%
+        height: auto
+
+      .hover-block
+        display: none
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        background: $green
+        .social-list
+          display: flex
+          justify-content: center
+          align-items: center
+          padding: 15px 0
+        .social-item
+          list-style: none
+          margin-right: 25px
+          &:last-child
+            margin-right: 0
+
+          & a
+            display: inline-block
+            width: 28px
+            height: 28px
+            background:
+              repeat: no-repeat
+              size: contain
+              position: center
+          &.fb a
+            background-image: url("../images/icons/fb.png")
+          &.vk a
+            background-image: url("../images/icons/vk.png")
+          &.insta a
+            background-image: url("../images/icons/insta.png")
+
+    &:hover
+      .hover-block
+        display: block
+
+    .info-block
+      .name
+        font-family: $font-Raleway-Semibold
+      .spec
+        font-family: $font-Raleway-Regular
+        color: $grey
