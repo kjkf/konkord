@@ -1,0 +1,69 @@
+.about-us
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: flex-start
+
+  &__img
+    //width: 875px
+    height: 816px
+    display: flex
+
+  &__text
+    padding-top: 90px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+
+  .title
+    margin-bottom: 40px
+
+.list
+  margin: 0
+  padding: 0
+  list-style: none
+
+.list-item
+  margin: 0 0 50px 0
+  padding: 0 0 0 75px
+  list-style: none
+  position: relative
+  &::before
+    content: ''
+    width: 59px
+    height: 59px
+    border: 2px solid #000000
+    border-radius: 50%
+    position: absolute
+    top: 0
+    left: 0
+    background-size: 37px 37px
+    background-repeat: no-repeat
+    background-position: center center
+    background-image: url("../images/icons/ic-econom.svg")
+
+  &__econom
+    &::before
+      background-image: url("../images/icons/ic-econom.svg")
+  &__speed
+    &::before
+      background-image: url("../images/icons/ic-speed.svg")
+  &__honest
+    &::before
+      background-image: url("../images/icons/ic-honest.svg")
+  &__profi
+    &::before
+      background-image: url("../images/icons/ic-profi.svg")
+
+  .bold
+    font-size: 16px
+    font-family: $font-Raleway-Bold
+    line-height: 1.2
+    color: #414141
+  p
+    font-size: 14px
+    font-family: $font-Raleway-Light
+    line-height: 1.786
+    color: #818181
