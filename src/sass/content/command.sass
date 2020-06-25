@@ -1,5 +1,6 @@
 .command
   padding: 90px 0
+  margin-bottom: 60px
   .title
     text-align: center
     margin-bottom: 85px
@@ -20,7 +21,7 @@
         left: -175px
       &:after
         right: -175px
-  .command-carousel
+  .carousel
     .controls
       width: 100%
       position: absolute
@@ -32,15 +33,6 @@
       height: 38px
       &.prev .arrow-icon
         transform: rotate(180deg)
-    .arrow-icon
-      fill: none
-      stroke: $grey-light
-      stroke-width: 4px
-      width: 23px
-      height: 38px
-      &:hover
-        stroke: #51cfd1
-
 
   .slider-item
     max-width: 300px
@@ -98,3 +90,12 @@
       .spec
         font-family: $font-Raleway-Regular
         color: $grey
+
+.arrow-icon
+  fill: none
+  stroke: $grey-light
+  stroke-width: 4px
+  width: 23px
+  height: 38px
+  &:hover
+    stroke: #51cfd1

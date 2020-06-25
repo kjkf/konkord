@@ -1,0 +1,84 @@
+.reviews
+  padding: 90px 0 130px
+  background: $purple
+  text-align: center
+  font-size: 16px
+  .title
+    margin-bottom: 78px
+    span
+      padding: 0 85px 20px
+      border-bottom: 1px solid $grey-light
+      position: relative
+      &:before
+        content: ''
+        display: inline-block
+        width: 50px
+        height: 12px
+        background: $purple
+        position: absolute
+        bottom: -10px
+        left: calc(50% - 25px)
+        background:
+          image: url("../images/icons/ic-arrow-down.svg")
+          repeat: no-repeat
+          position: center
+          size: contain
+
+  .carousel
+    .carousel-indicators
+      bottom: -60px
+      li
+        width: 15px
+        height: 15px
+        background: $grey-light
+        border-radius: 50%
+        border-width: 0
+        &.active
+          background: #666f77
+
+    .review-text
+      margin: 0 20% 30px
+      padding-top: 22px
+      font-size: 18px
+      line-height: 1.4
+      font-family: $font-Vollkon-Italic
+      position: relative
+      &:before, &:after
+        z-index: 10
+        content: ''
+        display: inline-block
+        width: 30px
+        height: 22px
+        position: absolute
+        left: -24px
+        top: 0
+        background:
+          image: url("../images/icons/quote.png")
+          repeat: no-repeat
+          size: contain
+          position: center
+      &:after
+        left: unset
+        top: unset
+        right: -35px
+        bottom: -25px
+
+    .delimiter
+      display: inline-block
+      width: 50px
+      height: 1px
+      background: $green
+      margin-bottom: 27px
+
+    .review-name
+      font-family: $font-Raleway-Semibold
+    .review-spec
+      font-family: $font-Raleway-Regular
+
+    .arrow-icon
+      width: 32px
+      height: 57px
+      stroke-width: 10px
+
+  .carousel-control-prev .arrow-icon
+    transform: rotate(180deg)
