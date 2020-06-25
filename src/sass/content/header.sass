@@ -1,0 +1,121 @@
+.header
+  &-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 0px
+    border-bottom: 1px solid $grey-blue
+  &-bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 0px
+
+.show-menu
+  display: none
+
+.contacts
+  display: flex
+  &-item
+    color: $grey-blue
+    font-family: $font-Raleway-Regular
+    font-size: 16px
+    line-height: 1.875
+    margin: 8px 38px 8px 0px
+    &:hover
+      color: $blue
+      text-decoration: none
+    &:last-child
+      margin-right: 0px
+
+.phone
+  color: $grey-blue
+  font-family: $font-HelveticaNeueCyr-Medium
+  font-size: 17.2px
+  line-height: 1.74
+  &-icon
+    margin-right: 10px
+
+.mail
+  &-icon
+    margin-right: 10px
+
+.location
+  &-icon
+    margin-right: 10px
+
+.social
+  display: flex
+  list-style: none
+  li
+    margin-right: 13px
+    &:last-child
+      margin-right: 0px
+  &-item
+    display: inline-block
+    width: 35px
+    height: 35px
+    border-radius: 6px
+    background:
+      color: $green
+      image: url("../images/icons/ic-tg.svg")
+      size: 22px
+      repeat: no-repeat
+      position: center
+
+
+    &:hover
+      background-color: $blue
+    &.tg
+      background-image: url("../images/icons/ic-tg.svg")
+    &.vb
+      background-image: url("../images/icons/ic-vb.svg")
+    &.wa
+      background-image: url("../images/icons/ic-wa.svg")
+
+
+.logo
+  display: inline-block
+  width: 241px
+  height: 62px
+  img
+    width: 100%
+    height: auto
+
+.navigation
+  display: inline-flex
+  justify-content: space-between
+  align-items: center
+  flex-grow: 1
+  margin-left: 140px
+  li
+    display: inline-block
+    padding: 15px 0px 20px
+    &.active, &:hover, &:active
+      .navigation-item
+        color: $green
+        text-decoration: none
+  &-item
+    text-transform: uppercase
+    font-family: $font-Raleway-Regular
+    font-size: 15px
+    line-height: 1
+    color: $fontColorMain
+
+
+select
+  border-width: 0px
+  height: auto
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  background: url('../images/icons/ic-wa.svg') 96% / 15% no-repeat transparent
+  padding: 0px 35px 0px 25px
+  &::-ms-expand
+    display: none
+
+
+@media screen and (min-width: 0\0 )
+  select
+    background: none\9
+    padding: 5px\9
