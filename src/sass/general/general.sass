@@ -92,3 +92,40 @@ h2.title
 .title-box__right
 	&::before
 		border: none
+
+.phone-icon
+	display: inline-block
+	width: 20px
+	height: 20px
+	fill: $green
+
+.mail-icon
+	display: inline-block
+	width: 21px
+	height: 15px
+	fill: $green
+
+.location-icon
+	display: inline-block
+	fill: $green
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: calc(50% - #{$locat_ic_h}/2)
+		left: 0px
+		+bg-image($locat_ic_w, $locat_ic_h, transparent, '../images/icons/ic-location.svg', cover)
+
+.arrow-down
+	display: inline-block
+	position: relative
+	&::after
+		content: ''
+		position: absolute
+		top: calc(50% - 8px/2)
+		right: 20px
+		width: 0
+		height: 0
+		border-left: 4.5px solid transparent
+		border-right: 4.5px solid transparent
+		border-top: 8px solid $grey-blue

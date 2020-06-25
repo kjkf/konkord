@@ -66,3 +66,11 @@ $phone-width-min: 320px
 		@content
 
 
+=bg-image($w, $h, $bg-col, $url, $bg-size)
+	width: $w
+	height: $h
+	background:
+		color: $bg-col
+		image: url(#{$url})
+		repeat: no-repeat
+		size: $bg-size
