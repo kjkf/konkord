@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="public/css/styles.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 <div class="content-wrapper">
@@ -461,26 +462,8 @@
 <div class="content-wrapper">
   <div class="contacts">
     <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-          <p class="address">г. Москва, ул. Доброслободская д.6 стр.1, 5 этаж</p>
-          <button type="button" id="navigate">Маршрут в Яндекс Навигаторе</button>
-        </div>
-        <div class="col-md-5">
-          <p class="phone">8 (495) 664-69-25</p>
-          <div class="row mode">
-            <div class="col-md-5">
-              <p>Будни</p>
-              <p>Суббота</p>
-              <p>Воскресенье</p>
-            </div>
-            <div class="col-md-5">
-              <p>10:00 — 19:00</p>
-              <p>10:00 — 17:00</p>
-              <p>10:00 — 15:00</p>
-            </div>
-          </div>
-        </div>
+      <div class="map-wrapper">
+          <div id="map" class="map"></div>
       </div>
     </div>
   </div>
@@ -492,8 +475,7 @@
 </div>
 
 <div class="content-wrapper">
-  <footer class="footer">
-  </footer>
+  <footer class="footer"></footer>
 </div>
 
 <script src="public/main.min.js"></script>
