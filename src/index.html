@@ -8,33 +8,60 @@
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="public/css/styles.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
-<h1>Test Header</h1>
-
 <div class="content-wrapper">
   <div class="header">
-    <img src="/bundles/acmedatapages/images/logo.png" width="272" height="70" alt="logo" title="" id="logo">
-    <ul class="navigation">
-      <li class="active">
-        <a href="/" page-id="1" title="" class="active">главная</a>
-      </li>
-      <li class="active">
-        <a href="/" page-id="4" title="" class="">услуги</a>
-      </li>
-      <li class="active">
-        <a href="/" page-id="3" title="" class="">цены</a>
-      </li>
-      <li class="active">
-        <a href="/" page-id="2" title="" class="">контакты</a>
-      </li>
-      <li class="active">
-        <a href="/" page-id="" title="" class="">о нас</a>
-      </li>
-    </ul>
+    <div class="container">
+      <div class="header-top">
+        <div class="contacts">
+          <a href="tel:8 (495) 664-69-25" class="phone contacts-item">
+            <svg class="phone-icon"><use xlink:href="public/images/icons/sprite.svg#ic-phone"/></svg><span>8 (495) 664-69-25</span>
+          </a>
+          <a href="#" class="mail contacts-item">
+            <svg class="mail-icon"><use xlink:href="public/images/icons/sprite.svg#ic-mail"/></svg><span>info-concord@mail.ru</span>
+          </a>
+          <div class="select-wrap location-icon arrow-down">
+            <select class="contacts-item">
+              <option selected>Москва</option>
+              <option>Владимир</option>
+            </select>
+          </div>
 
-    <div id="show-menu"></div>
+        </div>
+        <ul class="social">
+          <li><a href="#" class="social-item tg"></a></li>
+          <li><a href="#" class="social-item vb"></a></li>
+          <li><a href="#" class="social-item wa"></a></li>
+        </ul>
+      </div>
+      <div class="header-bottom">
+        <a href="#" id="logo" class="logo">
+          <img src="public/images/icons/logo.png" width="241" height="62" alt="logo" title="Конкорд - юридическая компания">
+        </a>
+        <ul class="navigation">
+          <li class="active">
+            <a href="/" page-id="1" title="" class="navigation-item">главная</a>
+          </li>
+          <li class="">
+            <a href="/" page-id="4" title="" class="navigation-item">услуги</a>
+          </li>
+          <li class="">
+            <a href="/" page-id="3" title="" class="navigation-item">цены</a>
+          </li>
+          <li class="">
+            <a href="/" page-id="2" title="" class="navigation-item">контакты</a>
+          </li>
+          <li class="">
+            <a href="/" page-id="" title="" class="navigation-item">о нас</a>
+          </li>
+        </ul>
+
+        <div id="show-menu" class="show-menu"></div>
+        </div>
     </div>
+  </div>
 </div>
 
 <div class="content-wrapper head-banner">
@@ -291,17 +318,39 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="video-wrapper">
-              <div class="youtube-video v1" id="Ax0pLuc8qR8"></div>
+              <video class="video-item" width="100%" height="100%"  poster="public/video/screenshot1.png" preload="none" >
+                <source src="public/video/1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="playpause"></div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="video-wrapper">2</div>
+            <div class="video-wrapper">
+              <video class="video-item" width="100%" height="100%" poster="public/video/screenshot2.png" preload="none">
+                <source src="public/video/2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="playpause"></div>
+            </div>
           </div>
           <div class="carousel-item">
-            <div class="video-wrapper">3</div>
+            <div class="video-wrapper">
+              <video class="video-item" width="100%" height="100%" poster="public/video/screenshot1.png" preload="none">
+                <source src="public/video/1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="playpause"></div>
+            </div>
           </div>
           <div class="carousel-item">
-            <div class="video-wrapper">4</div>
+            <div class="video-wrapper">
+              <video class="video-item" width="100%" height="100%" poster="public/video/screenshot2.png" preload="none">
+                <source src="public/video/2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="playpause"></div>
+            </div>
           </div>
         </div>
         <ol class="carousel-indicators">
@@ -317,11 +366,110 @@
 
 <div class="content-wrapper">
   <div class="letters">
+    <div class="container">
+      <!--Carousel Wrapper-->
+      <div id="lettersCarousel" class="command-carousel carousel slide carousel-multi-item" data-ride="gallery">
+
+        <!--Controls-->
+        <div class="controls controls-bottom">
+          <a class="btn-floating prev" href="#lettersCarousel" data-slide="prev">
+            <svg class="arrow-icon"><use xlink:href="public/images/icons/sprite.svg#ic-arrow"/></svg>
+          </a>
+          <a class="btn-floating" href="#lettersCarousel" data-slide="next">
+            <svg class="arrow-icon"><use xlink:href="public/images/icons/sprite.svg#ic-arrow"/></svg>
+          </a>
+        </div>
+        <!--/.Controls-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+          <!--First slide-->
+          <div class="carousel-item active">
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <img src="public/images/content/letter1.jpg" alt="Благодарственное письмо">
+                    <div class="hover-block"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <img src="public/images/content/letter1.jpg" alt="Благодарственное письмо">
+                    <div class="hover-block"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <img src="public/images/content/letter1.jpg" alt="Благодарственное письмо">
+                    <div class="hover-block"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--/.First slide-->
+
+          <!--Second slide-->
+          <div class="carousel-item">
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <img src="public/images/content/letter1.jpg" alt="Благодарственное письмо">
+                    <div class="hover-block"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <img src="public/images/content/letter1.jpg" alt="Благодарственное письмо">
+                    <div class="hover-block"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="slider-item">
+                  <div class="image-block">
+                    <img src="public/images/content/letter1.jpg" alt="Благодарственное письмо">
+                    <div class="hover-block"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--/.Second slide-->
+
+        </div>
+        <!--/.Slides-->
+
+      </div>
+      <!--/.Carousel Wrapper-->
+    </div>
   </div>
 </div>
 
 <div class="content-wrapper">
   <div class="contacts">
+    <div class="container">
+      <div class="map-wrapper">
+          <div id="map" class="map"></div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -331,8 +479,7 @@
 </div>
 
 <div class="content-wrapper">
-  <footer class="footer">
-  </footer>
+  <footer class="footer"></footer>
 </div>
 
 <script src="public/main.min.js"></script>
