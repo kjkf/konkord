@@ -92,6 +92,12 @@ h2.title
 .title-box__right
 	&::before
 		border: none
+	&::after
+		width: 225px
+		right: -225px
+		+tablet-down
+			width: 145px
+			right: -145px
 
 .phone-icon
 	display: inline-block

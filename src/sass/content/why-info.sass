@@ -1,0 +1,42 @@
+.why-info-bg-green
+  background-color: $green
+
+.why-info
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  +tablet-down
+    flex-direction: column
+
+  .item
+    width: 265px
+    height: 145px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    color: #ffffff
+    border-left: 1px solid rgba(1, 3, 2, 0.102)
+    border-right: 1px solid rgba(1, 3, 2, 0.102)
+    margin: 20px 0
+    +tablet-down
+      border: none
+      height: 90px
+    &:first-child
+      border-left: none
+    &:last-child
+      border-right: none
+    .number
+      font-family: $font-Raleway-Semibold
+      font-size: 60px
+      margin-bottom: 30px
+      +tablet-down
+        font-size: 38.7px
+        margin-bottom: 20px
+    .description
+      font-family: $font-Raleway-Light
+      font-size: 18px
+      +tablet-down
+        font-size: 14px
