@@ -9,6 +9,9 @@
   background-repeat: no-repeat
   background-size: 1070px 816px
   background-position: top left
+  +tablet-down
+    background-size: 100vw auto
+    height: auto
 
 .about-us
   max-width: 1000px
@@ -18,13 +21,24 @@
   flex-direction: row
   justify-content: flex-end
   align-items: flex-end
+
+  +tablet-down
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    padding-top: calc( 40px + (100vw / 1.3))
+
   &__text
     max-width: 530px
-    padding-top: 90px
+    margin-top: 90px
     display: flex
     flex-direction: column
     justify-content: flex-start
     align-items: flex-start
+    +tablet-down
+      max-width: 100%
+      padding: 0 15px
+      margin-top: 0
   .title
     margin-bottom: 40px
     font-size: 18px

@@ -1,11 +1,14 @@
 .blog
-  width: 1000px
+  width: 100%
   display: flex
   flex-direction: column
   justify-content: flex-start
   align-items: flex-start
   margin: 0 auto
   padding: 90px 0
+  +tablet-down
+    justify-content: center
+    align-items: center
 
 .blog-content
   width: calc(100% - 120px)
@@ -16,6 +19,13 @@
   flex-wrap: wrap
   margin-top: 85px
   padding: 0 60px
+  +tablet-down
+    width: 100%
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 0
+
 
 
 .blog-item
