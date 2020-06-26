@@ -3,10 +3,10 @@
   margin-bottom: 60px
   .title
     text-align: center
-    margin-bottom: 85px
+    margin-bottom: 90px
     span
       display: inline-block
-      padding: 20px 25px
+      padding: 14px 24px
       border: 1px solid $green
       position: relative
       &:before, &:after
@@ -22,13 +22,14 @@
       &:after
         right: -175px
   .carousel
+
   .slider-item
     text-align: center
     font-size: 18px
     line-height: 1.1
     .image-block
       position: relative
-      margin-bottom: 25px
+      margin-bottom: 22px
       img
         width: 100%
         height: auto
@@ -44,27 +45,32 @@
           display: flex
           justify-content: center
           align-items: center
-          padding: 15px 0
-        .social-item
-          list-style: none
-          margin-right: 25px
-          &:last-child
-            margin-right: 0
+          padding: 14px 0
 
-          & a
-            display: inline-block
-            width: 28px
-            height: 28px
-            background:
-              repeat: no-repeat
-              size: contain
-              position: center
-          &.fb a
-            background-image: url("../images/icons/fb.png")
-          &.vk a
-            background-image: url("../images/icons/vk.png")
-          &.insta a
-            background-image: url("../images/icons/insta.png")
+          .social-item
+            list-style: none
+            margin-right: 18px
+            width: 22px
+            height: 22px
+            &:last-child
+              margin-right: 0
+
+            & a
+              display: inline-block
+              width: 22px
+              height: 22px
+              background:
+                repeat: no-repeat
+                size: contain
+                position: center
+            &.fb a
+              background-image: url("../images/icons/fb.png")
+            &.vk a
+              background-image: url("../images/icons/vk.png")
+            &.insta a
+              background-image: url("../images/icons/insta.png")
+    +tablet-down
+      margin: 0 auto
 
     &:hover
       .hover-block
@@ -73,6 +79,7 @@
     .info-block
       .name
         font-family: $font-Raleway-Semibold
+        margin-bottom: 2px
       .spec
         font-family: $font-Raleway-Regular
         color: $grey

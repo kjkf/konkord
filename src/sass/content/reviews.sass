@@ -1,12 +1,12 @@
 .reviews
-  padding: 90px 0 130px
+  padding: 90px 0 124px
   background: $purple
   text-align: center
   font-size: 16px
   .title
-    margin-bottom: 78px
+    margin-bottom: 90px
     span
-      padding: 0 85px 20px
+      padding: 0 85px 15px
       border-bottom: 1px solid $grey-light
       position: relative
       &:before
@@ -37,7 +37,7 @@
           background: #666f77
 
     .review-text
-      margin: 0 20% 30px
+      margin: 0 20% 25px
       padding-top: 22px
       font-size: 18px
       line-height: 1.4
@@ -47,10 +47,10 @@
         z-index: 10
         content: ''
         display: inline-block
-        width: 30px
-        height: 22px
+        width: 27px
+        height: 19px
         position: absolute
-        left: -24px
+        left: -18px
         top: 0
         background:
           image: url("../images/icons/quote.png")
@@ -60,8 +60,10 @@
       &:after
         left: unset
         top: unset
-        right: -35px
-        bottom: -25px
+        right: -48px
+        bottom: 11px
+      +tablet-down
+        font-size: 14px
 
     .delimiter
       display: inline-block
