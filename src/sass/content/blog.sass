@@ -1,5 +1,5 @@
 .blog
-  max-width: 1000px
+  width: 1000px
   display: flex
   flex-direction: column
   justify-content: flex-start
@@ -8,12 +8,14 @@
   padding: 90px 0
 
 .blog-content
-  width: 100%
+  min-width: 100%
   display: flex
   flex-direction: row
-  justify-content: center
+  justify-content: space-between
   align-items: flex-start
   margin-top: 85px
+  margin-left: 60px
+  margin-right: 60px
 
 .blog-item
   width: 376px
@@ -22,6 +24,7 @@
   justify-content: flex-start
   align-items: flex-start
   border: 1px solid #dbe5ee
+
   img
     max-width: 376px
     margin-bottom: 20px
@@ -30,10 +33,9 @@
     text-transform: uppercase
     width: 100%
     text-align: center
-    margin-bottom: 15px
+    margin-bottom: 10px
+    letter-spacing: -0.2px
   p
-    
-
     display: flex
     font-family: $font-Raleway-Light
     font-size: 16px
@@ -44,4 +46,16 @@
     width: 100%
     height: 60px
     background-color: #f0f2fa
-    color:
+    display: flex
+    align-items: center
+    justify-content: center
+    text-decoration: none
+    &:hover
+      background-color: $green
+      .ic-arrow-right
+        fill: #fff
+
+  .ic-arrow-right
+    fill: #717a82
+    width: 22px
+    height: 10px
