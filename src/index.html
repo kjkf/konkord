@@ -30,18 +30,23 @@
               <option>Владимир</option>
             </select>
           </div>
-
         </div>
         <ul class="social">
           <li><a href="#" class="social-item tg"></a></li>
           <li><a href="#" class="social-item vb"></a></li>
           <li><a href="#" class="social-item wa"></a></li>
         </ul>
+        <button type="button" id="show-menu" class="btn show-menu"></button>
       </div>
       <div class="header-bottom">
         <a href="#" id="logo" class="logo">
           <img src="public/images/icons/logo.png" width="241" height="62" alt="logo" title="Конкорд - юридическая компания">
         </a>
+        <!--<ul class="social">
+          <li><a href="#" class="social-item tg"></a></li>
+          <li><a href="#" class="social-item vb"></a></li>
+          <li><a href="#" class="social-item wa"></a></li>
+        </ul>-->
         <ul class="navigation">
           <li class="active">
             <a href="/" page-id="1" title="" class="navigation-item">главная</a>
@@ -59,8 +64,6 @@
             <a href="/" page-id="" title="" class="navigation-item">о нас</a>
           </li>
         </ul>
-
-        <div id="show-menu" class="show-menu"></div>
         </div>
     </div>
   </div>
@@ -70,7 +73,7 @@
   <div class="head-banner-content">
     <div class="container">
       <div class="row">
-        <div class="col-7">
+        <div class="col-8 col-sm-7">
           <h1 class="title">Мы защитим вас от проблем</h1>
           <p class="subtitle">Наша миссия - cделать все и немного больше…</p>
           <button class="btn btn-rad">О нас</button>
@@ -172,7 +175,7 @@
   </div>
 </div>
 <div class="content-wrapper">
-  <div class="feedback">
+  <div class="feedback bg-purple">
     <div class="container">
       <h2 class="title title-box title-box__right">Форма обратной связи</h2>
       <div class="feedback-wrap">
@@ -188,9 +191,11 @@
         </div>
         <div class="feedback-item feedback-right">
           <form action="" method="POST" id="appl_form1" name="appl_form1" class="needs-validation" novalidate>
-            <input type="text" class="form-control form-control--green" placeholder="Имя" required>
-            <input type="text" class="form-control form-control--green" placeholder="Телефон" required>
-            <button type="submit" name="submit" class="btn btn-send">Отправить</button>
+            <div class="appl-form">
+              <input type="text" class="form-control form-control--green" placeholder="Имя" required>
+              <input type="text" class="form-control form-control--green" placeholder="Телефон" required>
+              <button type="submit" name="submit" class="btn btn-send">Отправить</button>
+            </div>
           </form>
         </div>
       </div>
@@ -247,7 +252,17 @@
 </div>
 
 <div class="content-wrapper">
-  <div class="contacts">
+  <div class="contacts bg-purple">
+    <div class="container">
+      <form action="" method="POST" id="appl_form2" name="appl_form2" class="needs-validation" novalidate>
+        <h2 class="title">ЗАКАЗАТЬ ОБРТАНЫЙ ЗВОНОК</h2>
+        <div class="appl-form">
+          <input type="text" class="form-control form-control--green" placeholder="Имя" required>
+          <input type="text" class="form-control form-control--green" placeholder="Телефон" required>
+          <button type="submit" name="submit" class="btn btn-send">Заказать</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 

@@ -29,14 +29,10 @@ h1
 	font-size: $fontSize_h1
 	line-height: $lineHeight_h1
 	font-weight: normal
-	+phone-down
-    	font-size: 26px
 
 h2
 	font-size: $fontSize_h2
 	line-height: $lineHeight_h2
-	+phone-down
-		font-size: 20px
 
 h3
 	font-size: $fontSize_h3
@@ -85,6 +81,9 @@ h4
 		border-bottom: 1px solid $green
 		top: 50%
 		left: -175px
+		+phone-down
+			width: 114px
+			left: -114px
 	&::after
 		content: ''
 		width: 175px
@@ -93,6 +92,9 @@ h4
 		border-bottom: 1px solid $green
 		top: 50%
 		right: -175px
+		+phone-down
+			width: 114px
+			right: -114px
 
 .title-box__right
 	padding: 13px 10px
@@ -151,8 +153,11 @@ h4
 	line-height: 1
 	border-radius: 0px
 	border-width: 0px
+	padding: 12px 18px
 	&:hover
 		color: #FFFFFF
+
+
 
 .btn-rad
 	border-radius: 3px
@@ -187,12 +192,16 @@ h4
 	height: 46px
 	&--green
 		border-color: $grey-light
+		background-color: #f7f7f7
 		&:focus, &:active
 			//border-width: 2px
 			border-color: $green
+			background-color: #f7f7f7
 	&:focus, &:active
 		outline: none !important
 		box-shadow: none !important
 	+placeholder
 		color: #a7a7a7
 
+.bg-purple
+	background-color: $purple

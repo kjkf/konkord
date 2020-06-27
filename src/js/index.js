@@ -18,4 +18,18 @@
         });
 
     }, false);
+
+    const show_menu = document.getElementById('show-menu');
+    const header_nav = document.querySelector('.navigation');
+    show_menu.addEventListener('click', () => {
+        header_nav.classList.add('active');
+        const links = header_nav.querySelectorAll('li');
+        links.forEach(link => link.addEventListener('click', e => header_nav.classList.remove('active')))
+    });
+
+    const social = document.querySelector('.social');
+    if (window.innerWidth < 768) {
+        const nav = document.querySelector('.header-bottom ');
+        nav.append(social);
+    }
 })();

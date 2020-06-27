@@ -1,5 +1,6 @@
 .contacts
   padding: 90px 0
+  color: $grey-blue
   .container
     +tablet-down
       padding-left: 0
@@ -12,6 +13,31 @@
       width: 100%
       min-height: 450px
 
+  .appl-form
+    display: flex
+    justify-content: space-between
+    +tablet-down
+      flex-direction: column
+  .form-control
+    width: 300px
+    +tablet-down
+      width: 100%
+      margin-bottom: 35px
+    //&:last-child
+      +tablet-down
+        margin-bottom: 0px
+  .btn
+    width: 250px
+    +tablet-down
+      width: 100%
+
+  h2.title
+    font-family: $font-HelveticaNeueCyr-Light
+    text-transform: uppercase
+    color: $grey-blue
+    margin-bottom: 35px
+    +tablet-down
+      margin-bottom: 43px
 
 .myPlacemark
   background: #ffffff
@@ -19,3 +45,4 @@
   width: 170px
   font-weight: bold
   //margin-left: 20px
+

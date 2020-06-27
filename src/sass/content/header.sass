@@ -5,17 +5,31 @@
     align-items: center
     padding: 20px 0px
     border-bottom: 1px solid $grey-blue
+    +tablet-down
+      padding: 15px 0px 10px
   &-bottom
     display: flex
     justify-content: space-between
     align-items: center
     padding: 20px 0px 23px
+    +tablet-down
+      padding: 20px 0px 25px
+      position: relative
 
 .show-menu
   display: none
+  +tablet-down
+    display: inline-block
+    width: 45px
+    height: 45px
+    border-radius: 2px
+    +bg-image(45px, 45px, #333333, '../images/icons/ic-menu.svg', 19px 15px)
+
 
 .contacts-info
   display: flex
+  +tablet-down
+    flex-wrap: wrap
   &-item
     color: $grey-blue
     font-family: $font-Raleway-Regular
@@ -27,6 +41,19 @@
       text-decoration: none
     &:last-child
       margin-right: 0px
+    +tablet-down
+      margin-top: 0px
+      margin-bottom: 0px
+  .phone
+    +tablet-down
+      order: 1
+  .mail
+    +tablet-down
+      order: 3
+  .select-wrap
+    +tablet-down
+      order: 2
+
 
 .phone
   color: $grey-blue
@@ -51,8 +78,12 @@
 .social
   display: flex
   list-style: none
+  +tablet-down
+    //display: none
   li
     margin-right: 13px
+    +phonemin-down
+      margin-right: 5px
     &:last-child
       margin-right: 0px
   &-item
@@ -80,6 +111,8 @@
   display: inline-block
   width: 241px
   height: 62px
+  +phonemin-down
+    width: 160px
   img
     width: 100%
     height: auto
@@ -90,19 +123,52 @@
   align-items: center
   flex-grow: 1
   margin-left: 140px
+
+  +tablet-down
+    display: none
+    position: absolute
+    flex-direction: column
+    width: calc(100% + 30px)
+    margin: 0px
+    left: -15px
+    top: 100%
+    background-color: #333333
+    z-index: 100
+  &.active
+    display: inline-flex
+
   li
     display: inline-block
     padding: 15px 0px 20px
     &.active, &:hover, &:active
+      +tablet-down
+        background-color: $green
+        border-color: $green
       .navigation-item
         color: $green
         text-decoration: none
+        +tablet-down
+          color: #FFFFFF
+
+    +tablet-down
+      width: 100%
+      padding: 10px 0px 12px
+      border: 0px solid #535353
+      border-bottom-width: 1px
+      text-align: center
+    &:first-child
+      +tablet-down
+        border-top-width: 1px
+
   &-item
     text-transform: uppercase
     font-family: $font-Raleway-Regular
     font-size: 15px
     line-height: 1
     color: $fontColorMain
+    +tablet-down
+      font-size: 16px
+      color: #FFFFFF
 
 
 select
@@ -124,16 +190,24 @@ select
 
 .head-banner
   min-height: 502px
-  background-color: #070505
+  background:
+    color: #070505
+    image: url("../images/content/banner/banner1.jpg")
+    repeat: no-repeat
+    size: cover
   //height: calc(100vh - 189px)
   //padding: 70px 0px
   color: #ffffff
   display: flex
   flex-direction: column
   justify-content: center
+  +phone-down
+    min-height: 214px
+    background-size: 100% 100%
 
   h1
     font-size: 56px
+    font-family: $font-Raleway-Bold
     line-height: 1.2
     color: #FFFFFF
     text-transform: uppercase
@@ -141,6 +215,10 @@ select
     margin-top: -30px
     +ipad-down
       font-size: 24px
+    +phone-down
+      margin-top: -15px
+      margin-bottom: 15px
+
   .subtitle
     font-size: 30px
     line-height: 1.3
@@ -148,13 +226,15 @@ select
     color: #FFFFFF
     width: 70%
     margin-bottom: 47px
-    +ipad-down
+    +tablet-down
       font-size: 13px
+      margin-bottom: 20px
 
 
   .btn
     width: 164px
-    min-height: 49px
     font-size: 24px
-    +ipad-down
+    +tablet-down
       font-size: 10px
+      width: 70px
+      padding: 6px 9px
