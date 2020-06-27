@@ -72,8 +72,9 @@ h4
 	line-height: $lineHeight_h2
 
 .title-box
+	display: inline-block
 	border: 1px solid $green
-	padding: 13px 10px
+	padding: 13px 33px
 	position: relative
 	//margin-left: 200px
 	&::before
@@ -94,6 +95,7 @@ h4
 		right: -175px
 
 .title-box__right
+	padding: 13px 10px
 	&::before
 		content: none
 	&::after
@@ -141,14 +143,56 @@ h4
 		border-top: 8px solid $grey-blue
 
 .btn
-  display: inline-block
-  width: 100%
-  background-color: $green
-  color: #FFFFFF
-  font-size: 22px
-  line-height: 1
-  &:hover
-    color: inherit
+	display: inline-block
+	width: 100%
+	background-color: $green
+	color: #FFFFFF
+	font-size: 22px
+	line-height: 1
+	border-radius: 0px
+	border-width: 0px
+	&:hover
+		color: #FFFFFF
 
 .btn-rad
-  border-radius: 3px
+	border-radius: 3px
+
+.plus-icon
+	fill: #FFFFFF
+	display: inline-block
+	width: 20px
+	height: 20px
+
+.ic-plus
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: 0px
+		left: 0px
+		width: 20px
+		height: 20px
+		background:
+			image: url("../images/icons/ic-plus1.svg")
+			color: transparent
+			repeat: no-repeat
+			size: cover
+
+.form-control
+	border-width: 1px
+	border-style: solid
+	border-radius: 0px
+	font-size: 18px
+	line-height: 1
+	height: 46px
+	&--green
+		border-color: $grey-light
+		&:focus, &:active
+			//border-width: 2px
+			border-color: $green
+	&:focus, &:active
+		outline: none !important
+		box-shadow: none !important
+	+placeholder
+		color: #a7a7a7
+

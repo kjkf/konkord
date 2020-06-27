@@ -1,0 +1,88 @@
+.services
+  padding: 90px 0px
+
+  h2.title
+    margin-bottom: 85px
+
+  h1.title
+    text-transform: uppercase
+    margin-bottom: 50px
+
+  .collapse-btn
+    width: 100%
+    font-size: 20px
+    line-height: 1
+    text-transform: uppercase
+    background-color: $green
+    border-width: 0px
+    color: #FFFFFF
+    text-align: left
+    padding: 27px 30px 27px 25px
+    display: flex
+    align-items: center
+    &.collapsed
+      background-color: transparent
+      border: 1px solid $grey-light
+      color: #000000
+      .plus-icon
+        fill: #000000
+
+  .plus-icon
+    margin-right: 30px
+
+  .collapse
+    border: 1px solid $grey-light
+    padding: 25px 32px
+    min-height: 160px
+
+  .card
+    border-width: 0px
+
+  .card-body
+    padding: 0px
+
+  //.collapse-btn-wrap, .collapse
+    margin-right: 27px
+
+  .collapse-wrap
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0px
+
+  //&-left
+    &>.title, .collapse-wrap
+      margin-right: 25px
+  //&-right
+    &>.title, .collapse-wrap
+      margin-left: 25px
+  &-wrap
+    display: flex
+    justify-content: space-between
+    +tablet-down
+      flex-direction: column
+
+  .services-item
+    width: 46%
+    +tablet-down
+      width: 100%
+
+.services-list
+  color: $grey-blue
+  list-style: none
+  li
+    position: relative
+    padding-left: 40px
+    font-family: $font-Raleway-Light
+    font-size: 24px
+    line-height: 1.5
+    &::before
+      content: ''
+      position: absolute
+      top: calc(50% - 8px/2)
+      left: 0px
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      background-color: $green
+
+
