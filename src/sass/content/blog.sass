@@ -9,9 +9,23 @@
   +tablet-down
     justify-content: center
     align-items: center
+  .title
+    +tablet-down
+      font-size: 24px
+  .title-box__right
+    +tablet-down
+      text-align: center
+      &::before
+        content: ""
+        width: 40px
+        left: -40px
+      &::after
+        width: 40px
+        right: -40px
 
 .blog-content
-  width: calc(100% - 120px)
+  width: 100%
+  //calc(100% - 120px)
   display: flex
   flex-direction: row
   justify-content: space-between
@@ -26,15 +40,15 @@
     align-items: center
     padding: 0
 
-
-
 .blog-item
   width: 376px
   display: flex
   flex-direction: column
   justify-content: flex-start
-  align-items: flex-start
+  align-items: center
   border: 1px solid #dbe5ee
+  +tablet-down
+    margin-bottom: 40px
 
   img
     max-width: 376px
