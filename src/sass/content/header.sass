@@ -108,14 +108,36 @@
 
 
 .logo
-  display: inline-block
-  width: 241px
+  width: 265px
   height: 62px
+  color: #444444
+  display: inline-flex
+  align-items: center
+  +phone-down
+    font-size: 1rem
   +phonemin-down
-    width: 160px
+    font-size: 0.7rem
+  &:active, &:hover
+    color: #444444
+    text-decoration: none
   img
-    width: 100%
+    width: 23%
     height: auto
+    margin-right: 10px
+    +phonemin-down
+      margin-right: 3px
+  &-name
+    font-size: 1.7em
+    line-height: 1
+    font-family: $font-MagistralC-Bold
+  &-subname
+    font-size: 0.7em
+    line-height: 1
+    font-family: $font-MagistralC-Regular
+  &-text
+    display: flex
+    flex-direction: column
+    justify-content: center
 
 .navigation
   display: inline-flex
