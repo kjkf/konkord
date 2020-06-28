@@ -28,7 +28,7 @@
     });
 
     const social = document.querySelector('.social');
-    if (window.innerWidth < 768) {
+    if (window.innerWidth <= 768) {
         const nav = document.querySelector('.header-bottom ');
         nav.append(social);
     }
