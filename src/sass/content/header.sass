@@ -219,9 +219,17 @@ select
   display: flex
   flex-direction: column
   justify-content: center
+  +laptop-down
+    min-height: 430px
+  +tablet-down
+    min-height: 300px
   +phone-down
     min-height: 214px
     background-size: 100% 100%
+  &.img-f
+    background-image: url("../images/content/banner/banner2.jpg")
+  &.img-s
+    background-image: url("../images/content/banner/banner3.jpg")
 
   h1
     font-size: 56px
