@@ -26,9 +26,12 @@
       flex-direction: column
   .form-control
     width: 300px
+    +ipad-down
+      margin-right: 10px
     +tablet-down
       width: 100%
       margin-bottom: 35px
+      margin-right: 0px
     //&:last-child
       +tablet-down
         margin-bottom: 0px
@@ -56,7 +59,10 @@
   &-addr
     font-family: $font-HelveticaNeueCyr-Light
     font-size: 24px
+    +ipad-down
+      width: 51%
     +tablet-down
+      width: auto
       margin-bottom: 48px
   .phone
     display: block
@@ -85,6 +91,10 @@
     &-right
       margin-left: 50px
       font-family: $font-HelveticaNeueCyr-Medium
+      +ipad-down
+        margin-left: 10px
+      +tablet-down
+        margin-left: 50px
 
 
 .myPlacemark

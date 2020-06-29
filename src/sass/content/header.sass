@@ -226,9 +226,9 @@ select
   +phone-down
     min-height: 214px
     background-size: 100% 100%
-  &.img-f
+  //&.img-f
     background-image: url("../images/content/banner/banner2.jpg")
-  &.img-s
+  //&.img-s
     background-image: url("../images/content/banner/banner3.jpg")
 
   h1
@@ -239,6 +239,7 @@ select
     text-transform: uppercase
     margin-bottom: 26px
     margin-top: -30px
+
     +ipad-down
       font-size: 24px
     +phone-down
@@ -256,7 +257,6 @@ select
       font-size: 13px
       margin-bottom: 20px
 
-
   .btn
     width: 164px
     font-size: 24px
@@ -264,3 +264,13 @@ select
       font-size: 10px
       width: 70px
       padding: 6px 9px
+
+  h1, .subtitle, .btn
+    transition: all 500ms, transform 500ms
+    -webkit-transition: all 500ms, transform 500ms
+    -o-transition: all 500ms, transform 500ms
+    -moz-transition: all 500ms, transform 500ms
+    opacity: 0
+    position: relative
+    &.active
+      opacity: 1
