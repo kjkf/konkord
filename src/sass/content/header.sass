@@ -7,6 +7,7 @@
     border-bottom: 1px solid $grey-blue
     +tablet-down
       padding: 15px 0px 10px
+      align-items: flex-start
   &-bottom
     display: flex
     justify-content: space-between
@@ -22,8 +23,11 @@
     display: inline-block
     width: 45px
     height: 45px
+    margin-top: 4px
     border-radius: 2px
-    +bg-image(45px, 45px, #333333, '../images/icons/ic-menu.svg', 19px 15px)
+    +bg-image(50px, 45px, $grey-brown, '../images/icons/ic-menu.svg', 70%)
+  &:hover
+    background-color: $grey-brown
 
 
 .contacts-info
@@ -150,7 +154,7 @@
     margin: 0px
     left: -15px
     top: 100%
-    background-color: #333333
+    background-color: $grey-brown
     z-index: 100
   &.active
     display: inline-flex
@@ -239,6 +243,7 @@ select
     text-transform: uppercase
     margin-bottom: 26px
     margin-top: -30px
+    left: 30px
 
     +ipad-down
       font-size: 24px
@@ -253,6 +258,7 @@ select
     color: #FFFFFF
     width: 70%
     margin-bottom: 47px
+    top: -20px
     +tablet-down
       font-size: 13px
       margin-bottom: 20px
@@ -260,6 +266,7 @@ select
   .btn
     width: 164px
     font-size: 24px
+    top: 20px
     +tablet-down
       font-size: 10px
       width: 70px
