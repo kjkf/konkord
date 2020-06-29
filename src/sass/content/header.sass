@@ -265,7 +265,17 @@ select
       width: 70px
       padding: 6px 9px
 
-horizontal
+  h1, .subtitle, .btn
+    transition: all 500ms, transform 500ms
+    -webkit-transition: all 500ms, transform 500ms
+    -o-transition: all 500ms, transform 500ms
+    -moz-transition: all 500ms, transform 500ms
+    opacity: 0
+    position: relative
+    &.active
+      opacity: 1
+
+.horizontal
   width: 200px
   height: 200px
   background: url('http://static1.360vrs.com/pano-content/judith-stone-at-sunset-east-farndon/640px-360-panorama.jpg')
@@ -281,12 +291,3 @@ horizontal
       background-position: 0 0
     to
       background-position: -400px 0
-  h1, .subtitle, .btn
-    transition: all 500ms, transform 500ms
-    -webkit-transition: all 500ms, transform 500ms
-    -o-transition: all 500ms, transform 500ms
-    -moz-transition: all 500ms, transform 500ms
-    opacity: 0
-    position: relative
-    &.active
-      opacity: 1
