@@ -223,6 +223,11 @@ select
   display: flex
   flex-direction: column
   justify-content: center
+  transition: all 700ms, transform 700ms
+  -webkit-transition: all 700ms, transform 700ms
+  -o-transition: all 700ms, transform 700ms
+  -moz-transition: all 700ms, transform 700ms
+  opacity: 0
   +laptop-down
     min-height: 430px
   +tablet-down
@@ -234,7 +239,8 @@ select
     background-image: url("../images/content/banner/banner2.jpg")
   &.img-s
     background-image: url("../images/content/banner/banner3.jpg")
-
+  &.visible
+    opacity: 1
   h1
     font-size: 56px
     font-family: $font-Raleway-Bold
