@@ -22,7 +22,7 @@
     const show_menu = document.getElementById('show-menu');
     const header_nav = document.querySelector('.navigation');
     show_menu.addEventListener('click', () => {
-        header_nav.classList.add('active');
+        header_nav.classList.toggle('active');
         const links = header_nav.querySelectorAll('li');
         links.forEach(link => link.addEventListener('click', e => header_nav.classList.remove('active')))
     });

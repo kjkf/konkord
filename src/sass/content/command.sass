@@ -1,10 +1,27 @@
 .command
+  .container
+    text-align: center
   padding: 90px 0
   margin-bottom: 60px
   .title
     text-align: center
     margin-bottom: 90px
-    span
+    +phone-down
+      &:before, &:after
+        width: 20%
+      &:before
+        left: -47px
+      &:after
+        right: -47px
+    +phonemin-down
+      &:before, &:after
+        width: 15%
+      &:before
+        left: -35px
+      &:after
+        right: -35px
+
+    //span
       display: inline-block
       padding: 14px 24px
       border: 1px solid $green
