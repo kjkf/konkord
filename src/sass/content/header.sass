@@ -38,13 +38,14 @@
     margin: 8px 38px 8px 0px
     &:hover
       color: $blue
-      text-decoration: none
     &:last-child
       margin-right: 0px
     +tablet-down
       margin-top: 0px
       margin-bottom: 0px
   .phone
+    &:hover
+      color: $blue
     +tablet-down
       order: 1
   .mail
@@ -62,10 +63,6 @@
   line-height: 1.74
   &-icon
     margin-right: 10px
-  &:hover
-    text-decoration: none
-    color: $blue
-
 
 .mail
   &-icon
@@ -119,7 +116,6 @@
     font-size: 0.7rem
   &:active, &:hover
     color: #444444
-    text-decoration: none
   img
     width: 23%
     height: auto
