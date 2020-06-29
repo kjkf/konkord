@@ -99,4 +99,29 @@
             banner.classList.add('visible');
         }, 5000);
     }
+
+    const head_banner_title = document.querySelector('.head-banner h1');
+    const head_banner_subtitle = document.querySelector('.head-banner .subtitle');
+    const head_banner_btn = document.querySelector('.head-banner .btn');
+
+    setTimeout(function(){
+        if(head_banner_title){
+            head_banner_title.classList.add("active");
+            head_banner_title.classList.add("fade-on-scroll-right");
+        }
+        setTimeout(function(){
+            if(head_banner_subtitle){
+                head_banner_subtitle.classList.add("active");
+                head_banner_subtitle.classList.add("fade-on-scroll-top");
+            }
+            setTimeout(function(){
+                if(head_banner_btn){
+                    head_banner_btn.classList.add("active");
+                    head_banner_btn.classList.add("fade-on-scroll-bottom");
+                }
+            }, 500);
+        }, 500);
+    }, 300);
+
+
 })();
