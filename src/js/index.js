@@ -96,7 +96,10 @@
             if (counter > 2) counter = 0;
             current = bgs[counter];
             banner.classList.add(current);
-            banner.classList.add('visible');
+            const timer = setTimeout(() => {
+                banner.classList.add('visible');
+                clearInterval(timer);
+            }, 300)
         }, 5000);
     }
 
