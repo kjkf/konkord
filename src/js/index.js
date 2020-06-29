@@ -62,6 +62,10 @@
             };
 
             document.addEventListener('scroll', numsCounter);
+
+            $(".phone-num").mask("+d(ddd)ddd-dd-dd", {
+                autoclear: false
+            });
         }
 
     }, false);
