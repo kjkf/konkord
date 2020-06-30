@@ -1,0 +1,105 @@
+.footer
+  padding: 25px 0px
+  background-color: $grey-dark1
+  color: $grey1
+  font-family: $font-Raleway-Light
+  font-size: 12px
+  line-height: 1.7
+  +tablet-down
+    position: relative
+    padding-bottom: 70px
+  .title
+    font-size: 16px
+    text-transform: uppercase
+    color: $grey1
+    margin-bottom: 10px
+  .footer-link
+    color: $green
+    display: inline-block
+    position: absolute
+    bottom: -5px
+    right: 30px
+    +phone-down
+      right: 0px
+      bottom: 3px
+    +phonemin-down
+      bottom: -15px
+
+  .form-control
+    font-size: 14px
+    margin-bottom: 13px
+    height: 36px
+    padding-left: 15px
+    padding-right: 15px
+    color: $grey1
+    +tablet-down
+      text-align: center
+    &:focus
+      background-color: transparent
+
+  .btn
+    font-size: 16px
+    text-transform: uppercase
+    padding: 11px 18px 10px
+
+  &-menu
+    list-style: none
+    a
+      color: $grey1
+      &:hover
+        color: $green
+
+  &-contacts
+    +tablet-down
+      order: -1
+      margin-bottom: 22px
+    a
+      color: $grey1
+      line-height: 2
+      &:hover
+        color: $green
+  &-wrap
+    display: flex
+    justify-content: space-between
+    +tablet-down
+      flex-wrap: wrap
+
+  &-left
+    width: 300px
+    +phone-down
+      width: 56%
+    +phonemin-down
+      width: 50%
+    .title
+      text-transform: unset
+    p
+      display: inline
+
+  &-center
+    width: 270px
+    display: flex
+    justify-content: space-between
+    +tablet-down
+      flex-direction: column
+      width: auto
+    +phonemin-down
+      margin-top: 20px
+
+  &-right
+    width: 300px
+    +tablet-down
+      width: 100%
+      margin-top: -18px
+    +phonemin-down
+      margin-top: 20px
+    .title
+      margin-bottom: 25px
+
+.copyright
+  font-size: 18px
+  font-family: $font-HelveticaNeueCyr-Light
+  margin-top: 10px
+  +tablet-down
+    position: absolute
+    right: 15px
+    bottom: 5px
