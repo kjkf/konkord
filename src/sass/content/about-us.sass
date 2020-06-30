@@ -60,10 +60,16 @@
   list-style: none
 
 .list-item
-  margin: 0 0 20px 0
+  margin: 0 0 20px -30px
+  left: 30px
   padding: 0 0 0 75px
   list-style: none
   position: relative
+  transition: all 2000ms, transform 2000ms
+  -webkit-transition: all 2000ms, transform 2000ms
+  -o-transition: all 2000ms, transform 2000ms
+  -moz-transition: all 2000ms, transform 2000ms
+
   //background-color: red
   &::before
     width: 59px

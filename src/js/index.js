@@ -1,13 +1,12 @@
-
 (function () {
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
         var forms = document.getElementsByClassName('needs-validation');
         // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
+        var validation = Array.prototype.filter.call(forms, function (form) {
 
-            form.addEventListener('submit', function(event) {
-                if ((form.checkValidity() === false)){
+            form.addEventListener('submit', function (event) {
+                if ((form.checkValidity() === false)) {
                     event.preventDefault();
                     event.stopPropagation();
                 } else {
@@ -21,58 +20,62 @@
         const whyInfoBlock = document.querySelector('.why-info-bg-green');
         const list = document.querySelector('.list');
         const list_items = document.getElementsByClassName('list-item');
-        //console.log(whyInfoBlock);
-        if (whyInfoBlock) {
-            const numsCounter = function() {
-                if (!active) {
+        const numsCounter = () => {
+            if (!active) {
+                if (whyInfoBlock.getBoundingClientRect().top <= (window.innerHeight - 100) && whyInfoBlock.getBoundingClientRect().bottom > 0) {
+                    active = true;
+                    const numbers = whyInfoBlock.querySelectorAll('.number');
+                    let cases = numbers[0];
+                    let percent = numbers[1];
+                    let years = numbers[2];
+                    cases.innerHTML = '';
+                    percent.innerHTML = '';
+                    years.innerHTML = '';
 
-                  //  setTimeout(() => {
-                        if (whyInfoBlock.getBoundingClientRect().top <= (window.innerHeight-100) && whyInfoBlock.getBoundingClientRect().bottom > 0) {
-                            active = true;
-                            const numbers = whyInfoBlock.querySelectorAll('.number');
-                            let cases = numbers[0];
-                            let percent = numbers[1];
-                            let years = numbers[2];
-                            cases.innerHTML = '';
-                            percent.innerHTML = '';
-                            years.innerHTML = '';
+                    let casesNums = 0;
+                    let casesInterval = setInterval(() => {
+                        casesNums++;
+                        cases.innerHTML = casesNums;
+                        if (casesNums >= 126) clearInterval(casesInterval);
+                    }, 0);
 
-                            let casesNums = 0;
-                            let casesInterval = setInterval(() => {
-                                casesNums++;
-                                cases.innerHTML = casesNums;
-                                if (casesNums >= 126) clearInterval(casesInterval);
-                            }, 0);
+                    let percentNums = 0;
+                    let percentInterval = setInterval(() => {
+                        percentNums++;
+                        percent.innerHTML = percentNums;
+                        if (percentNums >= 92) clearInterval(percentInterval);
+                    }, 5);
 
-                            let percentNums = 0;
-                            let percentInterval = setInterval(() => {
-                                percentNums++;
-                                percent.innerHTML = percentNums;
-                                if (percentNums >= 92) clearInterval(percentInterval);
-                            }, 5);
+                    let yearsNums = 0;
+                    let yearsInterval = setInterval(() => {
+                        yearsNums++;
+                        years.innerHTML = yearsNums;
+                        if (yearsNums >= 7) clearInterval(yearsInterval);
+                    }, 10);
 
-                            let yearsNums = 0;
-                            let yearsInterval = setInterval(() => {
-                                yearsNums++;
-                                years.innerHTML = yearsNums;
-                                if (yearsNums >= 7) clearInterval(yearsInterval);
-                            }, 10);
-
-                        }else if (list.getBoundingClientRect().top <= (window.innerHeight-100) && list.getBoundingClientRect().bottom > 0) {
-                          for (var i=0; i < list_items.length; i++){
-                            setEffetctAboutUsItems(list_items[i])
-                          }
-                        }
-                   // }, 200)
                 }
-            };
+            }
+        };
 
-            document.addEventListener('scroll', numsCounter);
+        const aboutUsAnimation = () => {
+            for (var i = 0; i < list_items.length; i++) {
+                if (list_items[i].getBoundingClientRect().top <= (window.innerHeight) && list_items[i].getBoundingClientRect().bottom > 0) { //
+                    setEffetctAboutUsItems(list_items[i])
+                }
+            }
+        };
 
-            $(".phone-num").mask("+d(ddd)ddd-dd-dd", {
-                autoclear: false
-            });
-        }
+        const animationHandler = () => {
+            numsCounter();
+            aboutUsAnimation();
+        };
+
+        animationHandler();
+        document.addEventListener('scroll', animationHandler);
+
+        $(".phone-num").mask("+d(ddd)ddd-dd-dd", {
+            autoclear: false
+        });
 
     }, false);
 
@@ -113,18 +116,18 @@
     const head_banner_subtitle = document.querySelector('.head-banner .subtitle');
     const head_banner_btn = document.querySelector('.head-banner .btn');
 
-    setTimeout(function(){
-        if(head_banner_title){
+    setTimeout(function () {
+        if (head_banner_title) {
             head_banner_title.classList.add("active");
             head_banner_title.classList.add("fade-on-scroll-right");
         }
-        setTimeout(function(){
-            if(head_banner_subtitle){
+        setTimeout(function () {
+            if (head_banner_subtitle) {
                 head_banner_subtitle.classList.add("active");
                 head_banner_subtitle.classList.add("fade-on-scroll-top");
             }
-            setTimeout(function(){
-                if(head_banner_btn){
+            setTimeout(function () {
+                if (head_banner_btn) {
                     head_banner_btn.classList.add("active");
                     head_banner_btn.classList.add("fade-on-scroll-bottom");
                 }
@@ -133,13 +136,11 @@
     }, 300);
 
     //const list_items = document.querySelector('.list');//document.getElementsByClassName('list');//document.querySelector('.list-item');//
-    function setEffetctAboutUsItems(el){
-      if(!el.classList.contains("active")){
-        setTimeout(function(){
-          el.classList.add("active");
-          el.classList.add("fade-on-scroll-right");
-        }, 1500);
-      }
+    function setEffetctAboutUsItems(el) {
+        if (!el.classList.contains("active")) {
+            el.classList.add("active");
+            el.classList.add("fade-on-scroll-right");
+        }
     }
 
 
