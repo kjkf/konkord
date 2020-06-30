@@ -19,6 +19,8 @@
 
         let active = false;
         const whyInfoBlock = document.querySelector('.why-info-bg-green');
+        const list = document.querySelector('.list');
+        const list_items = document.getElementsByClassName('list-item');
         //console.log(whyInfoBlock);
         if (whyInfoBlock) {
             const numsCounter = function() {
@@ -56,6 +58,10 @@
                                 if (yearsNums >= 7) clearInterval(yearsInterval);
                             }, 10);
 
+                        }else if (list.getBoundingClientRect().top <= (window.innerHeight-100) && list.getBoundingClientRect().bottom > 0) {
+                          for (var i=0; i < list_items.length; i++){
+                            setEffetctAboutUsItems(list_items[i])
+                          }
                         }
                    // }, 200)
                 }
@@ -126,15 +132,14 @@
         }, 500);
     }, 300);
 
-    const list_items = document.getElementsByClassName('list-item');
-    for (var i=0 ; i < list_items.length; i++){
-      console.log("list_items[i]= "+list_items[i]);
-      setTimeout(function(){
-         if (list_items[i]){
-          list_items[i].classList.add("active");
-          list_items[i].classList.add("fade-on-scroll-right");
-        }
-      }, 500);
+    //const list_items = document.querySelector('.list');//document.getElementsByClassName('list');//document.querySelector('.list-item');//
+    function setEffetctAboutUsItems(el){
+      if(!el.classList.contains("active")){
+        setTimeout(function(){
+          el.classList.add("active");
+          el.classList.add("fade-on-scroll-right");
+        }, 1500);
+      }
     }
 
 
