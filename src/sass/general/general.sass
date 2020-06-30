@@ -270,3 +270,34 @@ a
 		padding: 90px 0px
 		+phonemin-down
 			padding: 60px 0px
+
+//to-top button
+.to-top
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	//background-color: red
+	width: 59px
+	height: 59px
+	padding: 0px
+	text-align: center
+	border-radius: 50%
+	position: fixed
+	bottom: 130px
+	right: 40px
+	transition: background-color .3s, opacity .5s, visibility .5s
+	opacity: 0
+	visibility: hidden
+	z-index: 1000
+	.arrow-icon
+		stroke: rgba(255, 255, 255, 1)
+		stroke-width: 13px
+		transform: rotate(-90deg)
+		width: 13px
+		height: 23px
+		&:hover
+			stroke: rgba(255, 255, 255, 0.7)
+	&.show
+		opacity: 1
+		visibility: visible
+		line-height: 10px
