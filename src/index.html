@@ -14,14 +14,14 @@
 </head>
 <body>
 <div class="content-wrapper">
-  <div class="header">
+  <div class="header" id="header">
     <div class="container">
       <div class="header-top">
         <div class="contacts-info">
           <a href="tel:8 (495) 664-69-25" class="phone contacts-info-item">
             <svg class="phone-icon"><use xlink:href="public/images/icons/sprite.svg#ic-phone"/></svg><span>8 (495) 664-69-25</span>
           </a>
-          <a href="#" class="mail contacts-info-item">
+          <a href="mailto:info-concord@mail.ru" class="mail contacts-info-item">
             <svg class="mail-icon"><use xlink:href="public/images/icons/sprite.svg#ic-mail"/></svg><span>info-concord@mail.ru</span>
           </a>
           <div class="select-wrap location-icon arrow-down">
@@ -32,9 +32,9 @@
           </div>
         </div>
         <ul class="social">
-          <li><a href="#" class="social-item tg"></a></li>
+          <li><a href="tg://resolve?domain=@NAME" class="social-item tg"></a></li>
           <li><a href="#" class="social-item vb"></a></li>
-          <li><a href="#" class="social-item wa"></a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=84956646925" class="social-item wa"></a></li>
         </ul>
         <button type="button" id="show-menu" class="btn show-menu"></button>
       </div>
@@ -48,26 +48,25 @@
         </a>
         <ul class="navigation">
           <li class="active">
-            <a href="/" page-id="1" title="" class="navigation-item">главная</a>
+            <a href="#header" page-id="1" title="главная" class="navigation-item">главная</a>
           </li>
           <li class="">
-            <a href="/" page-id="4" title="" class="navigation-item">услуги</a>
+            <a href="#services" page-id="4" title="услуги" class="navigation-item">услуги</a>
           </li>
           <li class="">
-            <a href="/" page-id="3" title="" class="navigation-item">цены</a>
+            <a href="/" page-id="3" title="цены" class="navigation-item">цены</a>
           </li>
           <li class="">
-            <a href="/" page-id="2" title="" class="navigation-item">контакты</a>
+            <a href="#contacts" page-id="2" title="контакты" class="navigation-item">контакты</a>
           </li>
           <li class="">
-            <a href="/" page-id="" title="" class="navigation-item">о нас</a>
+            <a href="#about-us" page-id="" title="о нас" class="navigation-item">о нас</a>
           </li>
         </ul>
         </div>
     </div>
   </div>
 </div>
-
 <div class="content-wrapper head-banner img-s visible">
   <div class="head-banner-content">
     <div class="container">
@@ -81,9 +80,8 @@
     </div>
   </div>
 </div>
-
 <div class="content-wrapper">
-  <div class="services">
+  <div class="services" id="services">
     <div class="container">
       <div class="text-center">
         <h2 class="title title-box">Наши услуги</h2>
@@ -174,7 +172,7 @@
   </div>
 </div>
 <div class="content-wrapper">
-  <div class="feedback bg-purple">
+  <div class="feedback bg-purple" id="feedback">
     <div class="container">
       <h2 class="title title-box title-box__right">Форма обратной связи</h2>
       <div class="feedback-wrap">
@@ -184,7 +182,7 @@
           <a href="tel:8 (495) 664-69-25" class="phone">
             <span class="ic-rad"><svg class="phone-icon"><use xlink:href="public/images/icons/sprite.svg#ic-phone"/></svg></span><span>8 (495) 664-69-25</span>
           </a>
-          <a href="#" class="mail">
+          <a href="mailto:info-concord@mail.ru" class="mail">
             <span class="ic-rad"><svg class="mail-icon"><use xlink:href="public/images/icons/sprite.svg#ic-mail"/></svg></span><span>info-concord@mail.ru</span>
           </a>
         </div>
@@ -201,49 +199,52 @@
     </div>
   </div>
 </div>
-
 <div class="content-wrapper about-us-bgimg">
-  <div class="container">
-    <div class="about-us">
-      <div class="about-us__text">
-        <h2 class="title title-box title-box__right">Ещё немного о нашей компании!</h2>
-        <ul class="list">
-          <li class="list-item list-item__econom">
-            <p class="bold">Экономия Ваших средств</p>
-            <p>Отсутствие дополнительных платежей за наши услуги, Вы платите ровно столько – сколько указано в Вашем договоре с нашей компанией</p>
-          </li>
-          <li class="list-item list-item__speed">
-            <p class="bold">Скорость работы</p>
-            <p>Мы подаем необходимые процессуальные документы (претензия, исковое заявление) в течение 1 дня, с момента заключения с Вами договора</p>
-          </li>
-          <li class="list-item list-item__honest">
-            <p class="bold">Честность</p>
-            <p>В любое удобное для Вас время мы предоставляем Вам отчет о проделанной работе по Вашему вопросу</p>
-          </li>
-          <li class="list-item list-item__profi">
-            <p class="bold">Профессионализм</p>
-            <p>Команда профессиональных юристов с обширным практическим опытом  в отраслях права различной степени сложности</p>
-          </li>
-        </ul>
+  <div class="about-us-wrap" id="about-us">
+    <div class="container">
+      <div class="about-us">
+        <div class="about-us__text">
+          <h2 class="title title-box title-box__right">Ещё немного о нашей компании!</h2>
+          <ul class="list">
+            <li class="list-item list-item__econom">
+              <p class="bold">Экономия Ваших средств</p>
+              <p>Отсутствие дополнительных платежей за наши услуги, Вы платите ровно столько – сколько указано в Вашем договоре с нашей компанией</p>
+            </li>
+            <li class="list-item list-item__speed">
+              <p class="bold">Скорость работы</p>
+              <p>Мы подаем необходимые процессуальные документы (претензия, исковое заявление) в течение 1 дня, с момента заключения с Вами договора</p>
+            </li>
+            <li class="list-item list-item__honest">
+              <p class="bold">Честность</p>
+              <p>В любое удобное для Вас время мы предоставляем Вам отчет о проделанной работе по Вашему вопросу</p>
+            </li>
+            <li class="list-item list-item__profi">
+              <p class="bold">Профессионализм</p>
+              <p>Команда профессиональных юристов с обширным практическим опытом  в отраслях права различной степени сложности</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <div class="content-wrapper why-info-bg-green">
-  <div class="container">
-    <div class="why-info">
-      <div class="item">
-        <p class="number">126</p>
-        <p class="description">обращений за год</p>
-      </div>
-      <div class="item">
-        <p class="number">92</p>
-        <p class="description">% выйгранных дел</p>
-      </div>
-      <div class="item">
-        <p class="number">7</p>
-        <p class="description">лет успешной работы</p>
+  <div class="why-info-wrap">
+    <div class="container">
+      <div class="why-info">
+        <div class="item">
+          <p class="number">126</p>
+          <p class="description">обращений за год</p>
+        </div>
+        <div class="item">
+          <p class="number">92</p>
+          <p class="description">% выйгранных дел</p>
+        </div>
+        <div class="item">
+          <p class="number">7</p>
+          <p class="description">лет успешной работы</p>
+        </div>
       </div>
     </div>
   </div>
@@ -285,11 +286,6 @@
         </div>
       </form>
     </div>
-  </div>
-</div>
-
-<div class="content-wrapper">
-  <div class="back-call">
   </div>
 </div>
 
@@ -659,7 +655,7 @@
 </div>
 
 <div class="content-wrapper">
-  <div class="contacts contacts-map">
+  <div class="contacts contacts-map" id="contacts">
     <div class="container">
       <div class="contacts-wrap">
         <p class="contacts-addr">г. Москва, ул. Доброслободская д.6 стр.1, 5 этаж</p>
@@ -695,78 +691,81 @@
 </div>
 
 <div class="content-wrapper">
-  <div class="container">
-    <div class="blog">
-      <h2 class="title title-box title-box__right">Блог полезной информации</h2>
-      <div class="blog-content">
-        <!-- подблок блога-->
-        <div class="blog-item">
-          <img src="../public/images/content/blog_img.png" alt="">
-          <h3 class="title">Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. </p>
-          <a href="#">
-            <svg class="ic-arrow-right">
-              <use xlink:href="../public/images/icons/sprite.svg#ic-arrow-right" href="../public/images/icons/sprite.svg#ic-arrow-right"></use>
-            </svg>
-          </a>
-        </div><!-- конец подблок блога-->
+  <div class="blog-wrap" id="blog">
+    <div class="container">
+      <div class="blog">
+        <h2 class="title title-box title-box__right">Блог полезной информации</h2>
+        <div class="blog-content">
+          <!-- подблок блога-->
+          <div class="blog-item">
+            <img src="../public/images/content/blog_img.png" alt="">
+            <h3 class="title">Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. </p>
+            <a href="#">
+              <svg class="ic-arrow-right">
+                <use xlink:href="../public/images/icons/sprite.svg#ic-arrow-right" href="../public/images/icons/sprite.svg#ic-arrow-right"></use>
+              </svg>
+            </a>
+          </div><!-- конец подблок блога-->
 
-        <!-- подблок блога-->
-        <div class="blog-item">
-          <img src="../public/images/content/blog_img.png" alt="">
-          <h3 class="title">Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.  </p>
-          <a href="#">
-            <svg class="ic-arrow-right">
-              <use xlink:href="../public/images/icons/sprite.svg#ic-arrow-right" href="../public/images/icons/sprite.svg#ic-arrow-right"></use>
-            </svg>
-          </a>
-        </div><!-- конец подблок блога-->
-     </div>
+          <!-- подблок блога-->
+          <div class="blog-item">
+            <img src="../public/images/content/blog_img.png" alt="">
+            <h3 class="title">Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.  </p>
+            <a href="#">
+              <svg class="ic-arrow-right">
+                <use xlink:href="../public/images/icons/sprite.svg#ic-arrow-right" href="../public/images/icons/sprite.svg#ic-arrow-right"></use>
+              </svg>
+            </a>
+          </div><!-- конец подблок блога-->
+       </div>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="content-wrapper">
-  <div class="container">
-    <div class="content-info">
-      <p>«Конкорд» - юридическая компания специализирующаяся на предоставлении высококвалифицированных юридических
-        услуг организациям и физическим лицам, а также индивидуальным предпринимателям. Мы оказываем квалифицированную
-        юридическую помощь в г. Москва и Московской области. За время работы Юридическая компания «Конкорд» зарекомендовала
-        себя как надежного партнера в сфере предоставления юридических услуг.</p>
-      <p><strong>
-        Наши преимущества:
-      </strong></p>
-      <ul class="menu">
-        <li class="menu-item">
-          Юристы компании являются выпускниками ведущих юридических вузов страны (МГУ им. М.В. Ломоносова, Московский
-          государственный юридический университет имени О.Е. Кутафина, Российская академия правосудия) и имеют многолетний
-          практический опыт работы в различных отраслях права;
-        </li>
-        <li class="menu-item">
-          За 6 лет работы Юридической компании «Конкорд» юристами выиграно 92,4% дел;
-        </li>
-        <li class="menu-item">
-          Отсутствие дополнительных платежей за наши услуги, Вы платите ровно столько – сколько указано в Вашем договоре
-          с нашей компанией;
-        </li>
-        <li class="menu-item">
-          Мы предоставляем бесплатную правовую оценку перспектив разрешения Вашей ситуации;
-        </li>
-        <li class="menu-item">
-          Мы подаем необходимые процессуальные документы (претензия, исковое заявление) в течение 1 дня, с момента заключения с Вами договора;
-        </li>
-        <li class="menu-item">
-          В любое удобное для Вас время мы предоставляем Вам отчет о проделанной работе по Вашему вопросу.
-        </li>
-      </ul>
+  <div class="content-info-wrap" id="content-info">
+    <div class="container">
+      <div class="content-info">
+        <p>«Конкорд» - юридическая компания специализирующаяся на предоставлении высококвалифицированных юридических
+          услуг организациям и физическим лицам, а также индивидуальным предпринимателям. Мы оказываем квалифицированную
+          юридическую помощь в г. Москва и Московской области. За время работы Юридическая компания «Конкорд» зарекомендовала
+          себя как надежного партнера в сфере предоставления юридических услуг.</p>
+        <p><strong>
+          Наши преимущества:
+        </strong></p>
+        <ul class="menu">
+          <li class="menu-item">
+            Юристы компании являются выпускниками ведущих юридических вузов страны (МГУ им. М.В. Ломоносова, Московский
+            государственный юридический университет имени О.Е. Кутафина, Российская академия правосудия) и имеют многолетний
+            практический опыт работы в различных отраслях права;
+          </li>
+          <li class="menu-item">
+            За 6 лет работы Юридической компании «Конкорд» юристами выиграно 92,4% дел;
+          </li>
+          <li class="menu-item">
+            Отсутствие дополнительных платежей за наши услуги, Вы платите ровно столько – сколько указано в Вашем договоре
+            с нашей компанией;
+          </li>
+          <li class="menu-item">
+            Мы предоставляем бесплатную правовую оценку перспектив разрешения Вашей ситуации;
+          </li>
+          <li class="menu-item">
+            Мы подаем необходимые процессуальные документы (претензия, исковое заявление) в течение 1 дня, с момента заключения с Вами договора;
+          </li>
+          <li class="menu-item">
+            В любое удобное для Вас время мы предоставляем Вам отчет о проделанной работе по Вашему вопросу.
+          </li>
+        </ul>
 
-      <p>С нами, вы можете не беспокоиться за разрешение Вашего вопроса, мы гарантируем для Вас желаемый результат по делу!</p>
+        <p>С нами, вы можете не беспокоиться за разрешение Вашего вопроса, мы гарантируем для Вас желаемый результат по делу!</p>
+      </div>
     </div>
   </div>
-
 </div>
 
 <div class="content-wrapper">
@@ -777,7 +776,7 @@
           <h3 class="title">«Конкорд»</h3>
           <div class="position-relative">
             <p>Юридическая компания специализирующаяся на предоставлении высококвалифицированных юридических услуг организациям и физическим лицам, а также индивидуальным предпринимателям...</p>
-            <a href="#" class="footer-link">подробнее >></a>
+            <a href="#content-info" class="footer-link">подробнее >></a>
           </div>
           <div class="copyright">©&nbsp;2020</div>
         </div>
@@ -785,12 +784,12 @@
           <div class="">
             <h3 class="title">Меню</h3>
             <ul class="footer-menu">
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Услуги</a></li>
+              <li><a href="#header">Главная</a></li>
+              <li><a href="#services">Услуги</a></li>
               <li><a href="#">Цены</a></li>
-              <li><a href="#">Конаткы</a></li>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Блог</a></li>
+              <li><a href="#contacts">Конаткы</a></li>
+              <li><a href="#about-us">О нас</a></li>
+              <li><a href="#blog">Блог</a></li>
             </ul>
           </div>
           <div class="footer-contacts">
