@@ -142,5 +142,21 @@
       }
     }
 
+    //to-top button
+    let toTop = $('#to-top');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            toTop.addClass('show');
+        } else {
+            toTop.removeClass('show');
+        }
+    });
+
+    toTop.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+    });
+
 
 })();
