@@ -9,9 +9,15 @@
   background-repeat: no-repeat
   background-size: 1070px 816px
   background-position: top left
-  +tablet-down
-    background-size: 100vw auto
+  +laptop-down
+    height: 700px
+    background-size: contain
+    background-position: -90px
+  +ipad-down
+    width: 100vw
     height: auto
+    background-size: 100vw auto
+    background-position: top left
 
 .about-us
   max-width: 1000px
@@ -21,8 +27,9 @@
   flex-direction: row
   justify-content: flex-end
   align-items: flex-end
-
-  +tablet-down
+  //+tablet-down
+  +ipad-down
+    width: 100%
     flex-direction: column
     justify-content: center
     align-items: flex-start
@@ -35,7 +42,7 @@
     flex-direction: column
     justify-content: flex-start
     align-items: flex-start
-    +tablet-down
+    +ipad-down
       max-width: 100%
       padding: 0 15px
       margin-top: 0
@@ -43,6 +50,7 @@
     margin-bottom: 40px
     font-size: 18px
     letter-spacing: -0.2px
+
 
 .list
   margin: 0
@@ -60,7 +68,8 @@
     height: 59px
     border: 2px solid #000000
     border-radius: 50%
-    background-size: 37px 37px
+    background-size: cover
+    //37px 37px
     background-repeat: no-repeat
     background-position: center center
     background-image: url("../images/icons/ic-econom.svg")
@@ -68,16 +77,6 @@
     position: absolute
     top: 0
     left: 0
-  // height: 15px
-  // width: 15px
-  // background-image: url("../images/icons/ic-arrowright_green.svg")
-  // background-repeat: no-repeat
-  // background-size: cover
-  // background-position: top left
-  // content: ''
-  // position: absolute
-  // top: 2px
-  // left: 2px
   &__econom
     &::before
       background-image: url("../images/icons/ic-econom.svg")

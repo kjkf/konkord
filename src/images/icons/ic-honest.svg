@@ -1,6 +1,37 @@
-<svg
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="37px" height="37px">
-<image  x="0px" y="0px" width="37px" height="37px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAQAAABvl+iIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBhkGKQnaR0V8AAADhUlEQVRIx42VX2iXVRjHP8+7d5u/TahNDbrZRdDFtAvF2LwwEnVrMisy6qLIDIluAh1BF0qCkSAqpaAwCJf5ZwwXJlTm9EoWbF5J2ZSyJWywKGMjc7Jfuj1dvOe858/7+0XPj9/L+57znO/zfb7Pc86RNgQF8wTgcVpEdIIpEHhKL1FPaLfYIlMaDSZ4QAKrGGSMUR1hjHO0Kfoj/TRHv3a+0sdCIEHa/O835Zg2OoYyR4/2spghnsiX1GsTCDpKN9MCeTY+1Houk/APJ7jEPBvZziKgmwvU0mB8VDr0C/N+hRe4i8sph6rjKiu5xytcNFGe1XM0M8bTMoeL3skQigBwmZf52zJLck5rWAkc5KKQR90DrGCtolZLqAEmOQxAB2dpUIPsoFYBDzib64TCeWaB1cSW8p58BEAX/VInEatFwENmrYiKwKyUgRL5mLEaGvQDw+xFTmmKDyW3gZIst6UFhVZ9FGSCoilID0cE0FfpI/GgdJi7oLtJ8/jCHhLKesXBm2ciy2jWJj7UAQDe4DiJS/A3DqM8wyAZsycZoAs4I+N+egqwTK/JL4zzs2ww4NvkmLQ7mddxgRIwxxgLLKcR+F469Y8gtW6+tiyDrXPf9lUnO9jIr1xlK5I7DfIuAZCgTayIdGukn2amUwDeog+A0+yjl820kvAT3zBcQe0ZvvOAAWopA6SCvsanAMwzIOgoo76r/ccpiWlboEEElFSfl8+0BoADjCuspqS/M8lcJrH9B33lvWeQWbcfpQ6AI+wCkF0Mc53NoUKV3zNIMcxTpmkBPmenmSoD9Rm8tLI05BJ9/clNO6akvK47mGR/pIQqoJ/wXGG5b0N0udmUG7xTKXsA3peDodD5lsrsjo+bxpUJOPxgD2sHb7UpWuKiOEEl+NLAw+McWRoPW1cFpIn6mG/gX2bGrUur1Caz47xUWW+T4peyxfVcGkxFgHqSkayWsWWHkNwKEixK6EbkfPVGcJpZ/8Q7hQq8vMshKIxEXoZVHAt/C9fY27tK5RaY9xKMNbARFaCXTVarCryFb3m7KlTY83JTF2uVhgTIdqBVy4Mq9rx+HPP5L0v8xfI/F2WBw/0QQPlgslBtWfaNX4SH2UhBdlOrEo0ubY0OvyjlRxClguyG7iH2+qd6YT4UaWm+B4MF2Tm/hCU+iyJofHVobeoucOP6F9MuujsLYi4WPB+f+Re5l1XfiEr2tgAAAABJRU5ErkJggg==" />
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.5, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#333333;}
+</style>
+<g>
+	<g>
+		<polygon class="st0" points="312.21,317.5 140.24,317.5 140.24,164.64 146.61,164.64 146.61,311.13 305.84,311.13 305.84,156.45 
+			240.87,94.58 191.19,94.58 191.19,88.21 243.42,88.21 312.21,153.72 		"/>
+	</g>
+	<g>
+		<rect x="175.27" y="199.67" class="st0" width="101.91" height="12.74"/>
+	</g>
+	<g>
+		<rect x="175.27" y="229.92" class="st0" width="101.91" height="12.74"/>
+	</g>
+	<g>
+		<rect x="175.27" y="263.36" class="st0" width="101.91" height="12.74"/>
+	</g>
+	<g>
+		<polygon class="st0" points="309.02,164.64 235.78,164.64 235.78,91.39 242.15,91.39 242.15,158.27 309.02,158.27 		"/>
+	</g>
+	<g>
+		<path class="st0" d="M151.52,148.36c-8.37,0-16.73-3.18-23.1-9.55c-12.74-12.74-12.74-33.47,0-46.2
+			c6.17-6.17,14.38-9.57,23.1-9.57c8.73,0,16.93,3.4,23.1,9.57s9.57,14.37,9.57,23.1s-3.4,16.93-9.57,23.1
+			C168.25,145.18,159.88,148.36,151.52,148.36z M151.52,89.41c-7.02,0-13.63,2.74-18.6,7.7c-10.25,10.25-10.25,26.94,0,37.19
+			c10.26,10.25,26.94,10.24,37.19,0l0,0c4.97-4.97,7.71-11.58,7.71-18.6c0-7.03-2.74-13.63-7.71-18.6
+			C165.14,92.15,158.54,89.41,151.52,89.41z"/>
+	</g>
+	<g>
+		<path class="st0" d="M100.35,177.37l-10.5-10.5c-0.49-0.49-0.49-1.28,0-1.77l35.02-35.02c0.49-0.49,1.28-0.49,1.77,0l10.5,10.5
+			c0.49,0.49,0.49,1.28,0,1.77l-35.02,35.02C101.63,177.86,100.84,177.86,100.35,177.37z"/>
+	</g>
+</g>
 </svg>
