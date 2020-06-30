@@ -211,6 +211,7 @@ a
 	font-size: 18px
 	line-height: 1
 	height: 46px
+	color: #a7a7a7
 	&--green
 		border-color: $grey-light
 		background-color: #f7f7f7
@@ -218,9 +219,16 @@ a
 			//border-width: 2px
 			border-color: $green
 			background-color: #f7f7f7
+	&--grey
+		border-color: $grey2
+		background-color: transparent
+		&:focus, &:active
+			border-color: $grey2
+
 	&:focus, &:active
 		outline: none !important
 		box-shadow: none !important
+		color: #a7a7a7
 	+placeholder
 		color: #a7a7a7
 
@@ -239,3 +247,20 @@ a
   margin-right: 20px
   &:hover
     background-color: $blue-light
+
+.phone-num
+	font-family: $font-HelveticaNeueCyr-Light
+
+.scrolled::-webkit-scrollbar
+	width: 4px
+	height: 4px
+	background-color: $purple
+
+.scrolled::-webkit-scrollbar-thumb
+	background-color: #d1d1d1
+	border-radius: 2px
+	border-radius: 2px
+
+.scrolled
+	scrollbar-color: #d1d1d1 $purple
+	scrollbar-width: thin
