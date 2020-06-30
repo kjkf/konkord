@@ -76,6 +76,8 @@ a
 	border: 1px solid $green
 	padding: 13px 33px
 	position: relative
+	+phonemin-down
+		max-width: calc(100vw - 65px)
 	//margin-left: 200px
 	&::before
 		content: ''
@@ -116,9 +118,8 @@ a
 			width: 100px
 			right: -100px
 		+phonemin-down
-			width: 0px
-			right: 0px
-
+			width: 30px
+			right: -30px
 .phone-icon
 	display: inline-block
 	width: 20px
