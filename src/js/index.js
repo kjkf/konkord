@@ -19,7 +19,7 @@
 
         let active = false;
         const whyInfoBlock = document.querySelector('.why-info-bg-green');
-        console.log(whyInfoBlock);
+        //console.log(whyInfoBlock);
         if (whyInfoBlock) {
             const numsCounter = function() {
                 if (!active) {
@@ -125,6 +125,17 @@
             }, 500);
         }, 500);
     }, 300);
+
+    const list_items = document.getElementsByClassName('list-item');
+    for (var i=0 ; i < list_items.length; i++){
+      console.log("list_items[i]= "+list_items[i]);
+      setTimeout(function(){
+         if (list_items[i]){
+          list_items[i].classList.add("active");
+          list_items[i].classList.add("fade-on-scroll-right");
+        }
+      }, 500);
+    }
 
 
 })();

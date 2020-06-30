@@ -23,6 +23,13 @@
         width: 40px
         right: -40px
 
+    +phonemin-down
+      &::before
+        content: none
+      &::after
+        content: none
+
+
 .blog-content
   width: 100%
   //calc(100% - 120px)
@@ -49,10 +56,14 @@
   border: 1px solid #dbe5ee
   +tablet-down
     margin-bottom: 40px
+  +phonemin-down
+    width: 290px
 
   img
     max-width: 376px
     margin-bottom: 20px
+    +phonemin-down
+      max-width: 290px
 
   h3.title
     text-transform: uppercase
