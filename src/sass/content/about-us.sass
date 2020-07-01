@@ -47,6 +47,9 @@
     margin-bottom: 40px
     font-size: 18px
     letter-spacing: -0.2px
+  .fade-on-scroll-right
+    //opacity: 0.02
+    -webkit-transform: translate(-80px, 0px)
 
 
 .list
@@ -55,15 +58,15 @@
   list-style: none
 
 .list-item
-  margin: 0 0 20px -30px
-  left: 30px
+  margin: 0 0 20px 0px
+  left: 80px
   padding: 0 0 0 75px
   list-style: none
   position: relative
-  transition: all 2000ms, transform 2000ms
-  -webkit-transition: all 2000ms, transform 2000ms
-  -o-transition: all 2000ms, transform 2000ms
-  -moz-transition: all 2000ms, transform 2000ms
+  transition: all 500ms, transform 500ms
+  -webkit-transition: all 500ms, transform 500ms
+  -o-transition: all 500ms, transform 500ms
+  -moz-transition: all 500ms, transform 500ms
 
   //background-color: red
   &::before
@@ -75,7 +78,7 @@
     //37px 37px
     background-repeat: no-repeat
     background-position: center center
-    background-image: url("../images/icons/ic-econom.svg")
+    //background-image: url("../images/icons/ic-econom.svg")
     content: ""
     position: absolute
     top: 0
