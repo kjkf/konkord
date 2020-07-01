@@ -5,8 +5,8 @@
   font-size: 16px
   .title
     margin-bottom: 90px
-    +phone_min
-      margin-bottom: 73px
+    +tablet-down
+      margin-bottom: 70px
     span
       padding: 0 85px 20px
       border-bottom: 1px solid $grey-light
@@ -26,14 +26,16 @@
           position: center
           size: contain
       +tablet-down
-        padding: 0 25px 15px
+        padding: 0 25px 20px
         text-align: center
       +phone-down
-        padding: 0 0 15px
+        padding: 0 0 20px
 
   .carousel
     .carousel-indicators
-      bottom: -60px
+      bottom: -63px
+      +phone-down
+        bottom: -60px
       li
         width: 12px
         height: 12px
@@ -54,6 +56,8 @@
         height: 129px
         overflow-y: auto
         padding: 0 12px
+        +phone-down
+          height: 149px
       &:before, &:after
         z-index: 10
         content: ''
@@ -61,7 +65,7 @@
         width: 27px
         height: 19px
         position: absolute
-        left: -12px
+        left: -18px
         top: 4px
         background:
           image: url("../images/icons/quote.png")
@@ -69,15 +73,16 @@
           size: contain
           position: center
         +phone-down
-          top: 22px
+          top: 25px
+          left: -12px
       &:after
         left: unset
         top: unset
-        right: -12px
+        right: -7px
         bottom: 18px
         +phone-down
-          right: 0
-          bottom: 0
+          right: -3px
+          bottom: 18px
       +tablet-down
         font-size: 14px
       +phone-down
@@ -102,13 +107,17 @@
       width: 32px
       height: 57px
       stroke-width: 10px
+      top: -24px
+      left: -17px
       +phone-down
         width: 17px
         height: 35px
-        left: 25px
+        left: 22px
+        top: -36px
 
   .carousel-control-prev .arrow-icon
     transform: rotate(180deg)
+    left: 6px
     +phone-down
       left: unset
       right: 25px
