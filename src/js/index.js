@@ -51,7 +51,7 @@
                         yearsNums++;
                         years.innerHTML = yearsNums;
                         if (yearsNums >= 7) clearInterval(yearsInterval);
-                    }, 10);
+                    }, 90);
 
                 }
             }
