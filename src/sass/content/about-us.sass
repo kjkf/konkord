@@ -52,17 +52,19 @@
     margin-bottom: 40px
     font-size: 18px
     letter-spacing: -0.2px
-  .fade-on-scroll-right
+  //.fade-on-scroll-right
     -webkit-transform: translate(-80px, 0px)
 
 .list
   margin: 0
   padding: 0
   list-style: none
+  +phone-down
+    width: calc(100% - 30px)
 
 .list-item
   margin: 0 0 20px 0px
-  left: 80px
+  left: 30px
   padding: 0 0 0 75px
   list-style: none
   position: relative
