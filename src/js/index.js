@@ -32,21 +32,21 @@
                     percent.innerHTML = '';
                     years.innerHTML = '';
 
-                    let casesNums = 0;
+                    let casesNums = 1;
                     let casesInterval = setInterval(() => {
                         casesNums++;
                         cases.innerHTML = casesNums;
                         if (casesNums >= 126) clearInterval(casesInterval);
                     }, 0);
 
-                    let percentNums = 0;
+                    let percentNums = 1;
                     let percentInterval = setInterval(() => {
                         percentNums++;
                         percent.innerHTML = percentNums;
                         if (percentNums >= 92) clearInterval(percentInterval);
                     }, 5);
 
-                    let yearsNums = 0;
+                    let yearsNums = 1;
                     let yearsInterval = setInterval(() => {
                         yearsNums++;
                         years.innerHTML = yearsNums;
