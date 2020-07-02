@@ -74,13 +74,31 @@ task('copy:video', () => {
 });
 
 const styles = [
-    'src/sass/styles.sass'
+    'src/sass/styles.sass',
+    'src/sass/header.sass'
 ];
 
 task('styles', () => {
     return src(styles)
         .pipe(gulpif(env === 'dev', sourcemaps.init()))
         .pipe(concat('styles.min.sass'))
+        .pipe(sassGlob())
+        .pipe(sass().on('error', sass.logError))
+        //.pipe(px2rem())
+        .pipe(autoprefixer({
+            cascade: false
+        }))
+        .pipe(gulpif(env === 'prod', gcmq()))
+        .pipe(gulpif(env === 'prod', cleanCSS()))
+        .pipe(gulpif(env === 'dev', sourcemaps.write()))
+        .pipe(dest('dist/public/css'))
+        .pipe(reload({stream: true}));
+});
+
+task('styles:header', () => {
+    return src('src/sass/header.sass')
+        .pipe(gulpif(env === 'dev', sourcemaps.init()))
+        .pipe(concat('header.min.sass'))
         .pipe(sassGlob())
         .pipe(sass().on('error', sass.logError))
         //.pipe(px2rem())
@@ -153,6 +171,7 @@ task('server', () => {
 
 task('watch', () => {
     watch('./src/sass/**/*.sass', series("styles"));
+    watch('./src/sass/header.sass', series("styles:header"));
     watch('./src/js/**/*.js', series("scripts"));
     watch('./src/*.html', series("copy:html"));
     watch('./src/assets/*.*', series("copy:assets"));
@@ -175,13 +194,13 @@ task('build-copy:html', () => {
 
 task(
     "default",
-    series('clean', parallel('copy:html', 'copy:favicon', 'copy:fonts', 'copy:images', 'copy:video', 'copy:icons', 'copy:css', 'copy:assets', 'styles', 'icons', 'scripts'),
+    series('clean', parallel('copy:html', 'copy:favicon', 'copy:fonts', 'copy:images', 'copy:video', 'copy:icons', 'copy:css', 'copy:assets', 'styles', 'styles:header', 'icons', 'scripts'),
     parallel('watch', 'server')
     )
 );
 
 task(
     "build",
-    series('clean', parallel('build-copy:html', 'copy:favicon', 'copy:fonts', 'copy:images', 'copy:video', 'copy:icons', 'copy:css', 'copy:assets', 'styles', 'icons', 'scripts')
+    series('clean', parallel('build-copy:html', 'copy:favicon', 'copy:fonts', 'copy:images', 'copy:video', 'copy:icons', 'copy:css', 'copy:assets', 'styles', 'styles:header', 'icons', 'scripts')
     )
 );

@@ -1,3 +1,7 @@
+@import "../mixins/mixins"
+@import "../general/variables"
+@import "../general/general"
+
 .header
   &-top
     display: flex
@@ -103,11 +107,11 @@
     &:hover
       background-color: $blue
     &.tg
-      background-image: url("../images/icons/ic-tg.svg")
+      background-image: url("../../images/icons/ic-tg.svg")
     &.vb
-      background-image: url("../images/icons/ic-vb.svg")
+      background-image: url("../../images/icons/ic-vb.svg")
     &.wa
-      background-image: url("../images/icons/ic-wa.svg")
+      background-image: url("../../images/icons/ic-wa.svg")
 
 
 .logo
@@ -204,7 +208,7 @@ select
   -webkit-appearance: none
   -moz-appearance: none
   appearance: none
-  background: url('../images/icons/ic-wa.svg') 96% / 15% no-repeat transparent
+  background: url('../../images/icons/ic-wa.svg') 96% / 15% no-repeat transparent
   padding: 0px 35px 0px 25px
   &::-ms-expand
     display: none
@@ -219,7 +223,7 @@ select
   min-height: 502px
   background:
     color: #070505
-    image: url("../images/content/banner/banner1.jpg")
+    image: url("../../images/content/banner/banner1.jpg")
     repeat: no-repeat
     size: cover
   //height: calc(100vh - 189px)
@@ -241,9 +245,9 @@ select
     min-height: 214px
     background-size: 100% 100%
   &.img-f
-    background-image: url("../images/content/banner/banner2.jpg")
+    background-image: url("../../images/content/banner/banner2.jpg")
   &.img-s
-    background-image: url("../images/content/banner/banner3.jpg")
+    background-image: url("../../images/content/banner/banner3.jpg")
   &.visible
     opacity: 1
   h1
