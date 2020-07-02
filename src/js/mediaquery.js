@@ -10,18 +10,18 @@ $(function() {
 
     function handlerForMediaQueries(x) {
         if (mql800.matches) { // If media query matches
-            console.log('mql800.matches');
+            //console.log('mql800.matches');
             makeSlider(command, 'commandCarousel');
             makeSlider(letters, 'lettersCarousel');
         } else {
-            console.log('mql800.matches else');
+            //console.log('mql800.matches else');
             removeSlider(command, 'commandCarousel', 3);
             removeSlider(letters, 'lettersCarousel', 3);
         }
     }
 
     function makeSlider(elem, id) {
-        console.log('makeSlider', id);
+        //console.log('makeSlider', id);
         const list = elem.querySelectorAll('.slider-item');
         let carouselItems = elem.querySelectorAll('.carousel-item');
 
@@ -31,63 +31,15 @@ $(function() {
     }
 
     function removeSlider(elem, id, cols) {
-        console.log('removeSlider');
+        //console.log('removeSlider');
         const list = elem.querySelectorAll('.slider-item');
         let carouselItems = elem.querySelectorAll('.carousel-item');
-        console.log(list);
-        console.log(carouselItems);
 
         removeItems(carouselItems);
 
         let rowList = divideArrayForRow(list, cols);
         createCarouselRow(rowList, elem, id);
     }
-
-    /*function makeCommandSlider() {
-        console.log('makeCommandSlider');
-        const commandList = command.querySelectorAll('.slider-item');
-        let carouselItems = command.querySelectorAll('.carousel-item');
-
-        removeItems(carouselItems);
-
-        createCarouselRow(commandList, command, 'commandCarousel');
-    }
-
-    function removeCommandSlider(cols) {
-        console.log('removeCommandSlider');
-        const commandList = command.querySelectorAll('.slider-item');
-        let carouselItems = command.querySelectorAll('.carousel-item');
-        console.log(commandList);
-        console.log(carouselItems);
-
-        removeItems(carouselItems);
-
-        let rowList = divideArrayForRow(commandList, cols);
-        createCarouselRow(rowList, command, 'commandCarousel');
-    }
-
-    function makeLetterSlider() {
-        console.log('makeCommandSlider');
-        const commandList = letters.querySelectorAll('.slider-item');
-        let carouselItems = letters.querySelectorAll('.carousel-item');
-
-        removeItems(carouselItems);
-
-        createCarouselRow(commandList, command, 'commandCarousel');
-    }
-
-    function removeLetterSlider(cols) {
-        console.log('removeCommandSlider');
-        const commandList = command.querySelectorAll('.slider-item');
-        let carouselItems = command.querySelectorAll('.carousel-item');
-        console.log(commandList);
-        console.log(carouselItems);
-
-        removeItems(carouselItems);
-
-        let rowList = divideArrayForRow(commandList, cols);
-        createCarouselRow(rowList, command, 'commandCarousel');
-    }*/
 
     function createCarouselRow(list, mainWrapper, mainId) {
         const inner = mainWrapper.querySelector('.carousel-inner');
@@ -117,7 +69,6 @@ $(function() {
     }
 
     function divideArrayForRow(list, slidesInRow) {
-        console.log(list, slidesInRow);
         let rowsList = [];
         let className = !slidesInRow ? '' : slidesInRow === 2 ? 'col-md-6' : slidesInRow === 3 ? 'col-md-4' : slidesInRow === 4 ? 'col-md-3' : '';
         let oldClassName = getClassNameByMask(list[0].classList.value, 'col-md-\\d+'); //list[0].classList.value.match(/col-md-\d+/);
@@ -132,10 +83,8 @@ $(function() {
                 if (className) list[j].classList.add(className);
                 row.appendChild(list[j]);
             }
-            console.log('row = ', row);
             rowsList.push(row);
         }
-        console.log(rowsList);
         return rowsList;
     }
 
@@ -147,26 +96,17 @@ $(function() {
     }
 
     //===========================================
-
-    //console.log(window.innerWidth, window.visualViewport.width);
-    //alert(window.innerWidth);
-    //console.log(window.visualViewport.width);
     const windowInner = window.visualViewport ? window.visualViewport.width : window.innerWidth;
-    //console.log(windowInner, window.innerWidth);
     if (windowInner <= 768 &&  windowInner > 576) {
         handlerForMediaQueries();
     }
-//alert('before');
+
     try {
         mql800.addEventListener("change", () => {
             handlerForMediaQueries();
         });
     } catch (e1) {
         try {
-            // Safari
-            /*darkMediaQuery.addListener((e) => {
-                this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-            });*/
             mql800.addListener((e) => {
                 handlerForMediaQueries();
                 //alert('inside');
@@ -175,5 +115,4 @@ $(function() {
             console.error(e2);
         }
     }
-    //alert('after');
 });
