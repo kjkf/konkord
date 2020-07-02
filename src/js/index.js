@@ -161,5 +161,32 @@
         $('html, body').animate({scrollTop:0}, '300');
     });
 
+    //******************* for speed of fonts *******************
+    var html = document.documentElement;
 
+    if (sessionStorage.fontsLoaded) {
+        html.classList.add("fonts-loaded");
+    } else {
+        var script = document.createElement("script");
+        script.src = "../js/fontfaceobserver.js";
+        script.async = true;
+        script.onload = function() {
+            var regular = new FontFaceObserver("FontName");
+            var bold = new FontFaceObserver("FontName", {
+                weight: "bold"
+            });
+            var light = new FontFaceObserver("FontName", {
+                weight: "300"
+            });
+            Promise.all([
+                regular.load(),
+                bold.load(),
+                light.load()
+            ]).then(function() {
+                html.classList.add("fonts-loaded");
+                sessionStorage.fontsLoaded = true;
+            });
+        };
+        document.head.appendChild(script);
+    }
 })();
