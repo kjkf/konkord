@@ -1,14 +1,14 @@
 
-
 .about-us-bgimg
   width: 100%
   height: 816px
-  background-image: url('../images/content/shutterstock.png')
+  background-image: url('../images/content/shutterstock.jpg')
   background-repeat: no-repeat
   background-size: 1070px 816px
   background-position: top left
   .about-us-wrap
-    padding: 0!important
+    +ipad-down
+      padding: 0!important
   +laptop-down
     height: 700px
     background-size: contain
