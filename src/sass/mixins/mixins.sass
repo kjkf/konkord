@@ -20,6 +20,7 @@ $laptop-width: 1200px
 $ipad-width: 992px
 $tablet-width: 800px
 $phone-width: 576px
+$phone-width-min1: 400px
 $phone-width-min: 320px
 
 =laptop
@@ -35,7 +36,7 @@ $phone-width-min: 320px
 	@media screen and (min-width: $phone-width)
 		@content
 =phone_min
-	@media screen and (min-width: $phone-width-min)
+	@media screen and (min-width: $phone-width-min1)
 		@content
 
 
@@ -52,7 +53,7 @@ $phone-width-min: 320px
 	@media screen and (max-width: $phone-width)
 		@content
 =phonemin-down
-	@media screen and (max-width: $phone-width-min)
+	@media screen and (max-width: $phone-width-min1)
 		@content
 
 

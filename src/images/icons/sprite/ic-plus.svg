@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 60.1 60.1" style="enable-background:new 0 0 60.1 60.1;" xml:space="preserve">
-<polygon fill-rule="evenodd" clip-rule="evenodd" points="60.1,33.9 60.1,26.2 33.9,26.2 33.9,0 26.2,0 26.2,26.2 0,26.2 0,33.9 26.2,33.9 26.2,60.1 33.9,60.1
-	33.9,33.9 "/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.1 60.1"><path fill-rule="evenodd" clip-rule="evenodd" d="M60.1 33.9v-7.7H33.9V0h-7.7v26.2H0v7.7h26.2v26.2h7.7V33.9z"/></svg>
