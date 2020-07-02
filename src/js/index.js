@@ -88,11 +88,11 @@
     });
 
     const social = document.querySelector('.social');
-    console.log(window.innerWidth);
+    //console.log(window.innerWidth);
     if (window.innerWidth <= 800) {
         const nav = document.querySelector('.header-bottom ');
         nav.append(social);
-        console.log("xxx");
+        //console.log("xxx");
     }
 
     const banner = document.querySelector('.content-wrapper.head-banner');
