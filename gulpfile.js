@@ -49,10 +49,21 @@ task('copy:css', () => {
         .pipe(reload({ stream: true }));
 });
 
+const fonts = [
+    'src/fonts/HelveticaNeueCyr-Light/*.*',
+    'src/fonts/HelveticaNeueCyr-Medium/*.*',
+    'src/fonts/MagistralC-Bold/*.*',
+    'src/fonts/MagistralC-Regular/*.*',
+    'src/fonts/Raleway-Bold/*.*',
+    'src/fonts/Raleway-Light/*.*',
+    'src/fonts/Raleway-Regular/*.*',
+    'src/fonts/Raleway-Semibold/*.*',
+    'src/fonts/Vollkorn-Italic/*.*'
+];
 
 task('copy:fonts', () => {
-  return src('src/fonts/**/*.*')
-      .pipe(dest('dist/public/fonts'))
+  return src(fonts)
+      .pipe(dest('dist/public/css'))
       .pipe(reload({ stream: true }));
 });
 
