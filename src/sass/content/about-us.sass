@@ -1,33 +1,39 @@
 
 .about-us-bgimg
-  width: 100%
   height: 816px
-  background-image: url('../images/content/shutterstock.jpg')
-  background-repeat: no-repeat
-  background-size: 1070px 816px
-  background-position: top left
+  background:
+    image: url('../images/content/shutterstock.jpg')
+    repeat: no-repeat
+    size: contain
   .about-us-wrap
     +ipad-down
       padding: 0!important
-  +laptop-down
-    height: 700px
+
+  +laptop-down_1700
+    background-position: -27% 100%
     background-size: contain
-    background-position: -90px
+  +laptop-down_1500
+    background-position: -40% 100%
+    background-size: contain
+  +laptop-down_1400
+    background-position: -55% 100%
+    background-size: contain
+  +laptop-down_1300
+    background-position: -85% 100%
+    background-size: contain
+  +laptop-down
+    background-position: -127% 50%
+  +laptop-down_1024
+    background-position: 430% 50%
+    background-size: cover
   +ipad-down
-    width: 100vw
+    background-position: center top
+    background-size: contain
     height: auto
-    background-size: 100vw auto
-    background-position: top left
+
 
 .about-us
-  max-width: 1000px
-  margin-left: auto
-  margin-right: auto
   display: flex
-  flex-direction: row
-  justify-content: flex-end
-  align-items: flex-end
-  //+tablet-down
   +ipad-down
     width: 100%
     flex-direction: column
@@ -36,12 +42,18 @@
     padding-top: calc( 40px + (100vw / 1.3)
     //calc( 40px + (100vw / 1.3))
 
+  .container
+    background-color: rgba(255, 122, 255, 0.5)
+
   &__text
-    max-width: 530px
+    margin-left: auto
+    max-width: 53%
     display: flex
     flex-direction: column
     justify-content: flex-start
     align-items: flex-start
+    +laptop-down
+      max-width: 40%
     +ipad-down
       max-width: 100%
       padding: 0
@@ -52,8 +64,23 @@
     margin-bottom: 40px
     font-size: 18px
     letter-spacing: -0.2px
-  //.fade-on-scroll-right
-    -webkit-transform: translate(-80px, 0px)
+
+  .title-box--right::after
+    +laptop-down
+      width: 115px
+      right: -115px
+    +laptop-down_1024
+      width: 88px
+      right: -88px
+    +ipad-down
+      width: 225px
+      right: -225px
+    +tablet-down
+      width: 100px
+      right: -100px
+    +phonemin-down
+      width: 30px
+      right: -30px
 
 .list
   margin: 0

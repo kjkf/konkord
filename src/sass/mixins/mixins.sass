@@ -17,6 +17,11 @@
 
 
 $laptop-width: 1200px
+$laptop-width_1024: 1024px
+$laptop-width_1700: 1700px
+$laptop-width_1500: 1500px
+$laptop-width_1400: 1400px
+$laptop-width_1300: 1300px
 $ipad-width: 992px
 $tablet-width: 800px
 $phone-width: 576px
@@ -42,6 +47,21 @@ $phone-width-min: 320px
 
 =laptop-down
 	@media screen and (max-width: $laptop-width)
+		@content
+=laptop-down_1024
+	@media screen and (max-width: $laptop-width_1024)
+		@content
+=laptop-down_1300
+	@media screen and (max-width: $laptop-width_1300)
+		@content
+=laptop-down_1400
+	@media screen and (max-width: $laptop-width_1400)
+		@content
+=laptop-down_1500
+	@media screen and (max-width: $laptop-width_1500)
+		@content
+=laptop-down_1700
+	@media screen and (max-width: $laptop-width_1700)
 		@content
 =ipad-down
 	@media screen and (max-width: $ipad-width)
