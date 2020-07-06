@@ -1,28 +1,25 @@
 
 .about-us-bgimg
   height: 816px
-  //background:
+  background:
     image: url('../images/content/shutterstock.jpg')
     repeat: no-repeat
     size: contain
-  +ipad-down
-    overflow: hidden
-    position: relative
   .about-us-wrap
     +ipad-down
       padding: 0!important
 
-  //+laptop-down_1700
+  +laptop-down_1700
     background-position-x: -27%
-  //+laptop-down_1500
+  +laptop-down_1500
     background-position-x: -40%
-  //+laptop-down_1400
+  +laptop-down_1400
     background-position-x: -55%
-  //+laptop-down_1300
+  +laptop-down_1300
     background-position-x: -115%
-  //+laptop-down
+  +laptop-down
     background-position-x: -127%
-  //+laptop-down_1024
+  +laptop-down_1024
     background-position: 430% 50%
     background-size: cover
   +ipad-down
@@ -38,22 +35,23 @@
     flex-direction: column
     justify-content: center
     align-items: flex-start
-    //padding-top: calc( 40px + (100vw / 1.3)
+    padding-top: calc( 40px + (100vw / 1.3)
     //calc( 40px + (100vw / 1.3))
 
+  .container
+    background-color: rgba(255, 122, 255, 0.5)
+
   &__text
-    //margin-left: auto
-    min-width: 530px
-    max-width: 530px
-    width: 530px
+    margin-left: auto
+    max-width: 53%
     display: flex
     flex-direction: column
     justify-content: flex-start
     align-items: flex-start
+    +laptop-down
+      max-width: 40%
     +ipad-down
       max-width: 100%
-      min-width: 100%
-      width: 100%
       padding: 0
       margin-top: 0
     +phonemin-down
@@ -140,30 +138,3 @@
     color: #818181
     //background-color: green
     margin: 15px 0
-
-
-.about-us--left
-  //background-color: blue
-  flex-grow: 1
-  position: relative
-  +ipad-down
-    width: 100%
-    height: 530px
-    position: unset
-
-  img
-    position: absolute
-    top: -90px
-    right: -130px
-    +ipad-down
-      width: auto
-      height: 485px
-      top: 0
-      left: -40px
-      left: 0px
-      right: unset
-    +phone-down
-      left: -15px
-
-.about-us--right
-  //background-color: red
