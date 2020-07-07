@@ -97,15 +97,20 @@
   &-time
     display: flex
     line-height: 1.3
+    +ipad-down
+      width: 100%
+      flex-direction: row
+      justify-content: space-between
     &-right
+      min-width: 135px
       margin-left: 50px
       font-family: $font-HelveticaNeueCyr-Medium
       +ipad-down
-        margin-left: 10px
-      +tablet-down
-        margin-left: 50px
-      +phonemin-down
         margin-left: 0px
+      // +tablet-down
+      //   margin-left: 50px
+      // +phonemin-down
+      //   margin-left: 0px
 
 
 .myPlacemark
@@ -114,4 +119,3 @@
   width: 170px
   font-weight: bold
   //margin-left: 20px
-

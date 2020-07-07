@@ -11,3 +11,6 @@ package-lock.json
 *.xml
 .DS_Store
 blocksbota.html
+src/sass/about-us_old.sass
+index_bota.html
+konkord.css
