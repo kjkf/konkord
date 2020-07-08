@@ -1,18 +1,18 @@
-
 .about-us-bgimg
-  //height: 816px
+  height: 816px
   background:
-    image: url('../images/content/shutterstock_full.jpg')
+    image: url('../images/content/shutterstock.jpg')
     repeat: no-repeat
     size: auto 100%
     color: #fbfbfb
     position: left top
-
+  background-position-x: 25%
   +laptop-down-1600
-    background-position-x: 25%
-  // +laptop-down
-  //   background-position-x: 20%
-
+    height: auto
+  +ipad-down
+    background-position: left top
+    background-size: auto 80vw
+    height: auto
 
   .about-us-wrap
     +ipad-down
@@ -21,25 +21,6 @@
       padding: 60px 0px!important
     +laptop-down_1400
       padding: 30px 0px!important
-    // +laptop-down_1300
-    //   padding: 10px 0px!important
-
-
-  // +laptop-down_1500
-  //   background-position-x: -40%
-  // +laptop-down_1400
-  //   background-position-x: -55%
-  // +laptop-down_1300
-  //   background-position-x: -85%
-
-  // +laptop-down_1024
-  //   background-position: 430% 50%
-  //   background-size: cover
-  +ipad-down
-    background-position: left top
-    background-size: auto 80vw
-    height: auto
-
 
 .about-us
   display: flex
@@ -52,10 +33,6 @@
     padding-top: calc( 40px + (100vw / 1.3)
   +tablet-down
     padding-top: calc( 20px + (100vw / 1.3)
-    //calc( 40px + (100vw / 1.3))
-
-  // .container
-  //   background-color: rgba(255, 122, 255, 0.5)
 
   &__text
     margin-left: auto
@@ -65,8 +42,6 @@
     flex-direction: column
     justify-content: flex-start
     align-items: flex-start
-    //background-color: rgba(255, 255, 255, 0.4)
-    //rgba(255, 255, 255, 0.8)
     +laptop-down_1300
       max-width: 50%
     +laptop-down
@@ -83,7 +58,6 @@
     letter-spacing: -0.2px
     +laptop-down_1300
       margin-bottom: 20px
-
 
   .title-box--right::after
     +laptop-down
@@ -128,10 +102,8 @@
     border: 2px solid #333
     border-radius: 50%
     background-size: 65%
-    //37px 37px
     background-repeat: no-repeat
     background-position: center center
-    //background-image: url("../images/icons/ic-econom.svg")
     content: ""
     position: absolute
     top: 0
@@ -160,7 +132,5 @@
     font-size: 14px
     font-family: $font-Raleway-Light
     line-height: 1.786
-    //color: yellow
     color: #818181
-    //background-color: green
     margin: 15px 0
