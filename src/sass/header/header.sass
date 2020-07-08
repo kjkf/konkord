@@ -306,13 +306,32 @@ select
 
 .head-banner-inner
   min-height: 195px
+  padding-top: 40px
+  transition: all 3000ms, transform 3000ms
+  -webkit-transition: all 3000ms, transform 3000ms
+  -o-transition: all 3000ms, transform 3000ms
+  -moz-transition: all 3000ms, transform 3000ms
+  background:
+    color: #070505
+    image: url("../images/content/banner/banner1.jpg")
+    repeat: no-repeat
+    size: cover
   .title
-    font-size: 100%
+    font-size: 36px
     font-family: $font-Raleway-Regular
     display: block
     width: 100%
     height: 46px
     text-align: center
+    color: #FFFFFF
+    text-transform: uppercase
+    transform: translate(0px, 20px)
+    +tablet-down
+      font-size: 30px
+    +phone-down
+      font-size: 20px
+  h1.fade-on-scroll-top.active
+    opacity: 1
 
 .horizontal
   width: 200px
