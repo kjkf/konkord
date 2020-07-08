@@ -11,12 +11,12 @@ $(function() {
     function handlerForMediaQueries(x) {
         if (mql800.matches) { // If media query matches
             //console.log('mql800.matches');
-            makeSlider(command, 'commandCarousel');
-            makeSlider(letters, 'lettersCarousel');
+            if (command) makeSlider(command, 'commandCarousel');
+            if (letters) makeSlider(letters, 'lettersCarousel');
         } else {
             //console.log('mql800.matches else');
-            removeSlider(command, 'commandCarousel', 3);
-            removeSlider(letters, 'lettersCarousel', 3);
+            if (command) removeSlider(command, 'commandCarousel', 3);
+            if (letters) removeSlider(letters, 'lettersCarousel', 3);
         }
     }
 
