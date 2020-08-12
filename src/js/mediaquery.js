@@ -97,9 +97,9 @@ $(function() {
 
     //===========================================
     const windowInner = window.visualViewport ? window.visualViewport.width : window.innerWidth;
-    if (windowInner <= 768 &&  windowInner > 576) {
+    //if (windowInner <= 768 &&  windowInner > 576) {
         handlerForMediaQueries();
-    }
+    //}
 
     try {
         mql800.addEventListener("change", () => {
