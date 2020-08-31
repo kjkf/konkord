@@ -5,9 +5,10 @@
     const windowInner = window.visualViewport ? window.visualViewport.width : window.innerWidth;
     if (lettersSliders) {
         lettersSliders.addEventListener('click', e => {
-            //console.log(e.target);
             if (!e.target.classList.contains('hover-block')) return;
-            const modal = createModal(e.target);
+            const imageWrapper = e.target.closest('.slider-item');
+            const img = imageWrapper.querySelector('img.slide');
+            const modal = createModal(img);
             openModal(modal);
         });
     }
@@ -35,6 +36,7 @@
 
     function createModalItems(modalWrapper, current) {
         const sliderItems = lettersSliders.querySelectorAll('img.slide');
+
         const modalContent = modalWrapper.querySelector('.modal-content');
 
         const sliderCount = sliderItems.length;
@@ -50,7 +52,6 @@
             mySlidesDiv.append(img);
 
             modalContent.append(mySlidesDiv);
-
             if (current === item) {
                 slideIndex = index;
             }
